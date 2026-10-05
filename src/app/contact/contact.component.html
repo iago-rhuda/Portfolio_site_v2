@@ -1,4 +1,10 @@
-<div class="contact-grid">
+<div class="contact-wrapper" data-anime="up">
+    <!-- Section Header -->
+    <div class="section-header text-center" data-anime="down">
+        <h2 class="apple-section-title">{{ 'CONTACT' | translate }}</h2>
+    </div>
+
+    <div class="contact-grid">
     <!-- Github Card -->
     <div class="card area-github" data-anime="up">
         <div class="card-body">
@@ -19,11 +25,11 @@
     <!-- Linkedin Card -->
     <div class="card area-linkedin" data-anime="right">
         <div class="card-body">
-            <h4 class="card-title"><i class="bi bi-linkedin"></i> Linkedin:</h4>
+            <h4 class="card-title"><i class="bi bi-linkedin"></i> LinkedIn:</h4>
             <div class="content-wrapper">
                 <p class="card-text">{{ 'CONTACT-CARD-TEXT-4' | translate }}.</p>
                 <div class="div-button">
-                    <a href="https://www.linkedin.com/in/iago-rhuda-ramos/" target="_blank">
+                    <a href="https://www.linkedin.com/in/iago-rhuda-ramos/" target="_blank" rel="noopener noreferrer">
                         <button type="button" class="btn-action">
                             <i class="bi bi-linkedin"></i> {{ 'ACCESS' | translate }}
                         </button>
@@ -32,4 +38,22 @@
             </div>
         </div>
     </div>
+
+    <!-- Lattes Card -->
+    <div class="card area-lattes" data-anime="up">
+        <div class="card-body">
+            <h4 class="card-title"><i class="bi bi-mortarboard-fill"></i> Lattes:</h4>
+            <div class="content-wrapper">
+                <p class="card-text">CNPq / Plataforma Lattes</p>
+                <div class="div-button">
+                    <a href="http://lattes.cnpq.br/0480857149911245" target="_blank" rel="noopener noreferrer">
+                        <button type="button" class="btn-action">
+                            <i class="bi bi-box-arrow-up-right"></i> {{ 'ACCESS' | translate }}
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>

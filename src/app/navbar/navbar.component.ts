@@ -25,6 +25,17 @@ export class NavbarComponent {
     this.isMenuOpen = false; // Close menu on selection
   }
 
+  scrollToSection(event: Event, secao: string) {
+    event.preventDefault();
+    this.setSecaoAtiva(secao);
+    if (isPlatformBrowser(this.platformId)) {
+      const elemento = document.getElementById(secao);
+      if (elemento) {
+        elemento.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }

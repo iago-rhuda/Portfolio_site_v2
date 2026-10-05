@@ -32,7 +32,7 @@
         <!-- Card Top: badge + actions -->
         <div class="card-top">
           <span class="category-badge cat-desktop">
-            {{ article.lang | uppercase }}
+            {{ getArticleLang(article) | uppercase }}
           </span>
           <div class="card-actions" *ngIf="!article.hideButton">
             <a *ngIf="!article.pending" [href]="article.link" target="_blank" rel="noopener noreferrer" class="action-btn visit-btn" (click)="$event.stopPropagation()">
@@ -86,7 +86,7 @@
     <!-- Modal header -->
     <div class="modal-header">
       <span class="category-badge cat-desktop">
-        {{ selectedArticle.lang | uppercase }}
+        {{ getArticleLang(selectedArticle) | uppercase }}
       </span>
       <h2 class="modal-title">
         {{ selectedArticle.title | translate }}

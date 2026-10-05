@@ -15,6 +15,7 @@
     "BASIC": "基础",
     "INTERMEDIARY": "中级",
     "ADVANCED": "高级",
+    "FLUENT_C1": "流利 (C1)",
     "HOME": "首页",
     "ABOUT": "关于我",
     "QUALIFICATIONS": "资质",
@@ -43,7 +44,7 @@
     "CONTACT": "联系方式",
     "COMPUTER ENGINEER": "计算机工程师",
     "UTC_DEGREE": "Ingénieur en génie informatique spécialisé en IA",
-    "HOME_SUBTITLE": "开发以效率和系统集成为重点的AI和自动化解决方案。",
+    "HOME_SUBTITLE": "专注于预测性维护、结构健康监测与智能自动化的机器学习与嵌入式系统工程师。",
     "ABOUT ME": "一名专注于人工智能和自动化的计算机工程学生。我的方法将软件的技术严谨性与硬件的物理理解相结合，寻求不仅在模型中有效而且在执行中高效的解决方案。<br><br>18岁时，我创立并经营了自己的服装品牌，这一经历让我对财务可行性和资源分配有了批判性的洞察。在分析到机会成本超过即时回报后，我决定停止运营以优先考虑我的技术教育。如今，我将这种分析性和主动性思维方式应用于开发解决实际问题的智能系统。",
     "AGE": "年龄",
     "YEARS": "岁",
@@ -117,7 +118,11 @@
     "CARD-LONG-RAG": "检索增强生成（RAG）系统。它将现代大语言模型（LLM）与专业的向量数据库和文档加载器（基于 LangChain）结合，根据私有文档库提供精准且具备上下文感知能力的 AI 回答。",
     "ARTICLE_PIBIC_TITLE": "风力涡轮机故障预测 (PIBIC)",
     "ARTICLE_PIBIC_DESC": "PUCPR的本科生研究，使用主成分分析 (PCA) 和逻辑回归来预测风力涡轮机叶片中的裂纹。",
-    "ARTICLE_COBEM_LONG_DESC": "评估用于结构损伤预测的TabPFN算法。结果表明无需超参数调整即可获得极高的准确性。 Mais detalhes técnicos e informações estendidas sobre o desenvolvimento desta pesquisa estarão disponíveis em breve. O trabalho explora metodologias e abordagens específicas da área.",
-    "ARTICLE_PIBIC_LONG_DESC": "Pesquisa de Iniciação Científica desenvolvida na PUCPR sob orientação do Prof. Dr. Helon Vicente Hultmann Ayala. O projeto, intitulado 'Desenvolvimento e Aplicações Inovadoras de Sistemas Inteligentes em Problemas de Regressão, Classificação e Previsão de Energia', utilizou Análise de Componentes Principais (PCA) e Regressão Logística para identificar tendências de rachaduras em pás de aerogeradores. A metodologia simplificou variáveis e alcançou acurácia de 92% na detecção preditiva, otimizando práticas de manutenção no setor de energia eólica.",
-    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI"
+    "ARTICLE_COBEM_LONG_DESC": "评估用于结构损伤预测的TabPFN算法。研究表明其在无需超参数调整的情况下具备出色的准确性，优于传统模型，在结构健康监测（SHM）领域展现出强大的应用潜力。有关本研究进展的更多技术细节将很快公布。",
+    "ARTICLE_PIBIC_LONG_DESC": "在PUCPR由Helon Vicente Hultmann Ayala博士指导完成的本科科研项目（PIBIC）。该项目结合主成分分析（PCA）与逻辑回归模型，识别风力发电机叶片的裂纹扩展趋势。通过降维处理，在预测性检测中达到92%的准确率，显著优化了风电领域的运维实践。",
+    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI",
+    "AVAILABLE_BADGE": "求职中",
+    "LOCATION_LABEL": "地点",
+    "LOCATION_VALUE": "贡比涅，法国（可前往巴黎工作）",
+    "PHOTO_ALT": "Iago Rhudá Ramos 的照片"
 }

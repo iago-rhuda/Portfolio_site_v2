@@ -14,6 +14,7 @@
     "INTERMEDIARY": "Intermedio",
     "ADVANCED": "Avanzado",
     "ADVANCED_B2": "Avanzado B2+",
+    "FLUENT_C1": "Fluido (C1)",
     "HOME": "INICIO",
     "ABOUT": "SOBRE MÍ",
     "QUALIFICATIONS": "CALIFICACIONES",
@@ -42,7 +43,7 @@
     "CONTACT": "CONTACTO",
     "COMPUTER ENGINEER": "Ingeniero Informático",
     "UTC_DEGREE": "Ingénieur en génie informatique spécialisé en IA",
-    "HOME_SUBTITLE": "Desarrollando soluciones de IA y Automatización enfocadas en eficiencia e integración sistémica.",
+    "HOME_SUBTITLE": "Ingeniero de Machine Learning y Sistemas Embebidos especializado en mantenimiento predictivo, monitoreo de integridad estructural y automatización inteligente.",
     "DOUBLE DEGREE": "Doble Titulación",
     "BACHELOR": "Licenciatura",
     "ABOUT ME": "Estudiante de Ingeniería Informática enfocado en Inteligencia Artificial y Automatización. Mi enfoque combina el rigor técnico del software con la comprensión física del hardware, buscando soluciones que no solo funcionen en modelos, sino que sean eficientes en la ejecución.<br><br>A los 18 años, fundé y gestioné mi propia marca de ropa, una experiencia que me dio una visión crítica sobre la viabilidad financiera y la asignación de recursos. Decidí cerrar las operaciones para priorizar mi educación técnica después de analizar que el costo de oportunidad superaba los retornos inmediatos. Hoy, aplico esa mentalidad analítica y proactiva para desarrollar sistemas inteligentes que resuelvan problemas reales.",
@@ -118,7 +119,11 @@
     "CARD-LONG-RAG": "Un sistema de Generación Aumentada por Recuperación (RAG) que integra grandes modelos de lenguaje (LLM) modernos con bases de datos vectoriales especializadas y cargadores de documentos (a través de LangChain) para proporcionar respuestas precisas y contextuales basadas en bases de datos de documentos privados.",
     "ARTICLE_PIBIC_TITLE": "Predicción de Fallas en Aerogeneradores (PIBIC)",
     "ARTICLE_PIBIC_DESC": "Investigación de Pregrado en la PUCPR utilizando Análisis de Componentes Principales (PCA) y Regresión Logística para predecir grietas en aspas de aerogeneradores.",
-    "ARTICLE_COBEM_LONG_DESC": "Evaluación del algoritmo TabPFN para la predicción de daños estructurales. Resultados indican excelente precisión sin ajuste de hiperparámetros, superando modelos tradicionales. Mais detalhes técnicos e informações estendidas sobre o desenvolvimento desta pesquisa estarão disponíveis em breve. O trabalho explora metodologias e abordagens específicas da área.",
-    "ARTICLE_PIBIC_LONG_DESC": "Pesquisa de Iniciação Científica desenvolvida na PUCPR sob orientação do Prof. Dr. Helon Vicente Hultmann Ayala. O projeto, intitulado 'Desenvolvimento e Aplicações Inovadoras de Sistemas Inteligentes em Problemas de Regressão, Classificação e Previsão de Energia', utilizou Análise de Componentes Principais (PCA) e Regressão Logística para identificar tendências de rachaduras em pás de aerogeradores. A metodologia simplificou variáveis e alcançou acurácia de 92% na detecção preditiva, otimizando práticas de manutenção no setor de energia eólica.",
-    "PAGE_TITLE": "Iago Rhudá Ramos | Ingeniero en Computación & IA"
+    "ARTICLE_COBEM_LONG_DESC": "Evaluación del algoritmo TabPFN para la predicción de daños estructurales. Los resultados indican una excelente precisión sin ajuste de hiperparámetros, superando a los modelos tradicionales con un gran potencial para el monitoreo de integridad estructural (SHM). Próximamente estarán disponibles más detalles técnicos e información ampliada sobre el desarrollo de esta investigación.",
+    "ARTICLE_PIBIC_LONG_DESC": "Investigación de Iniciación Científica desarrollada en la PUCPR bajo la orientación del Prof. Dr. Helon Vicente Hultmann Ayala. El proyecto utilizó Análisis de Componentes Principales (PCA) y Regresión Logística para identificar patrones de fisuración en palas de aerogeneradores. La metodología redujo dimensiones y alcanzó un 92% de precisión en la detección predictiva, optimizando significativamente las prácticas de mantenimiento en el sector eólico.",
+    "PAGE_TITLE": "Iago Rhudá Ramos | Ingeniero en Computación & IA",
+    "AVAILABLE_BADGE": "Disponible para trabajar",
+    "LOCATION_LABEL": "Ubicación",
+    "LOCATION_VALUE": "Compiègne, Francia (disponible para París)",
+    "PHOTO_ALT": "Foto de Iago Rhudá Ramos"
 }

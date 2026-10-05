@@ -15,6 +15,7 @@
     "BASIC": "基礎",
     "INTERMEDIARY": "中級",
     "ADVANCED": "上級",
+    "FLUENT_C1": "流暢 (C1)",
     "HOME": "ホーム",
     "ABOUT": "私について",
     "QUALIFICATIONS": "資格",
@@ -43,7 +44,7 @@
     "CONTACT": "お問い合わせ",
     "COMPUTER ENGINEER": "コンピュータエンジニア",
     "UTC_DEGREE": "Ingénieur en génie informatique spécialisé en IA",
-    "HOME_SUBTITLE": "AIと自動化のソリューションを効率性とシステム統合に重点を置いて開発しています。",
+    "HOME_SUBTITLE": "予知保全、構造ヘルスモニタリング、インテリジェント自動化を専門とする機械学習・組込みシステムエンジニア。",
     "ABOUT ME": "人工知能と自動化に特化したコンピュータ工学の学生です。私のアプローチは、ソフトウェアの技術的厳密さとハードウェアの物理的理解を組み合わせ、モデルで機能するだけでなく実行でも効率的なソリューションを追求します。<br><br>18歳の時、自分のアパレルブランドを立ち上げて経営しました。その経験から財務的な小回りと資源配分に対する批判的な洞察力を得ました。機会コストが即座のリターンを上回ると分析した後、技術教育を優先するために事業を山来することにしました。今日、私はこの分析的で積極的な思考方式を用いて、実際の問題を解決するインテリジェントシステムを開発しています。",
     "AGE": "年齢",
     "YEARS": "歳",
@@ -117,7 +118,11 @@
     "CARD-LONG-RAG": "検索拡張生成（RAG）システム。大規模言語モデル（LLM）と特化したベクトルデータベース、ドキュメントローダー（LangChainを使用）を統合し、非公開ドキュメントストアに基づく高精度でコンテキストに対応した回答を提供します。",
     "ARTICLE_PIBIC_TITLE": "風力タービンの故障予測 (PIBIC)",
     "ARTICLE_PIBIC_DESC": "PUCPRでの学部生研究。主成分分析（PCA）とロジスティック回帰を使用して風力タービンのブレードの亀裂を予測します。",
-    "ARTICLE_COBEM_LONG_DESC": "構造損傷予測のためのTabPFNアルゴリズムの評価。ハイパーパラメータ調整なしで優れた精度を示しました。 Mais detalhes técnicos e informações estendidas sobre o desenvolvimento desta pesquisa estarão disponíveis em breve. O trabalho explora metodologias e abordagens específicas da área.",
-    "ARTICLE_PIBIC_LONG_DESC": "Pesquisa de Iniciação Científica desenvolvida na PUCPR sob orientação do Prof. Dr. Helon Vicente Hultmann Ayala. O projeto, intitulado 'Desenvolvimento e Aplicações Inovadoras de Sistemas Inteligentes em Problemas de Regressão, Classificação e Previsão de Energia', utilizou Análise de Componentes Principais (PCA) e Regressão Logística para identificar tendências de rachaduras em pás de aerogeradores. A metodologia simplificou variáveis e alcançou acurácia de 92% na detecção preditiva, otimizando práticas de manutenção no setor de energia eólica.",
-    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI"
+    "ARTICLE_COBEM_LONG_DESC": "構造損傷予測のためのTabPFNアルゴリズムの評価。ハイパーパラメータ調整なしで優れた精度を示し、従来のモデルを凌駕して構造ヘルスモニタリング（SHM）への強力な適用可能性を実証しました。本研究の進展に関する詳細な技術情報は近日中に公開予定です。",
+    "ARTICLE_PIBIC_LONG_DESC": "PUCPR（パラナ・カトリック大学）にてヘロン・ヴィセンテ・フルトマン・アヤラ教授の指導のもと実施された科学研究。本プロジェクトでは、主成分分析（PCA）およびロジスティック回帰を用いて風力発電用ブレードの亀裂発生傾向を特定しました。次元削減を行い、予知検出において92%の精度を達成し、風力発電分野におけるメンテナンスの効率化に大きく貢献しました。",
+    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI",
+    "AVAILABLE_BADGE": "求職中",
+    "LOCATION_LABEL": "所在地",
+    "LOCATION_VALUE": "コンピエーニュ、フランス（パリへの勤務可能）",
+    "PHOTO_ALT": "イアゴ・フダ・ラモスの写真"
 }

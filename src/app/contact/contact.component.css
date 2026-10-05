@@ -2,29 +2,40 @@
    CONTACT — Apple glass contact grid
    ============================================================ */
 
-.contact-grid {
-  display: grid;
-  gap: 0.85rem;
+:host {
+  display: block;
   width: 100%;
-  max-width: 720px;
+}
+
+.contact-wrapper {
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
-  grid-template-columns: 1fr;
-  min-height: 100vh;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-@media (min-width: 600px) {
-  .contact-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "github linkedin";
-    max-width: 600px;
-    justify-content: center;
-  }
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
 
-  .area-github   { grid-area: github; }
-  .area-linkedin { grid-area: linkedin; }
+.contact-grid {
+  display: grid;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* ── Contact Card ── */

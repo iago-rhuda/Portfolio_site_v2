@@ -140,7 +140,16 @@
           "builder": "@nguniversal/builders:prerender",
           "options": {
             "routes": [
-              "/"
+              "/",
+              "/en",
+              "/fr",
+              "/pt",
+              "/es",
+              "/de",
+              "/it",
+              "/ja",
+              "/ko",
+              "/zh"
             ]
           },
           "configurations": {

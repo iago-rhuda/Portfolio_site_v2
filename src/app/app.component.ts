@@ -12,19 +12,28 @@ export class AppComponent {
   title = 'portfolio-site';
   secaoAtiva: string = 'HOME';
 
+  showBackToTop = false;
+
   constructor(
     private translate: TranslateService,
     private titleService: Title,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
     this.translate.addLangs(['en', 'pt', 'fr', 'it', 'es', 'de', 'ko', 'ja', 'zh']);
-    const lang = this.translate.getBrowserLang();
     const supported = ['en', 'pt', 'fr', 'it', 'es', 'de', 'ko', 'ja', 'zh'];
-    if (lang && supported.includes(lang)) {
-      this.translate.use(lang);
-    } else {
-      this.translate.setDefaultLang('en');
+    let initialLang = 'en';
+    if (isPlatformBrowser(this.platformId)) {
+      const savedLang = localStorage.getItem('portfolio_lang');
+      if (savedLang && supported.includes(savedLang)) {
+        initialLang = savedLang;
+      } else {
+        const browserLang = this.translate.getBrowserLang();
+        if (browserLang && supported.includes(browserLang)) {
+          initialLang = browserLang;
+        }
+      }
     }
+    this.translate.use(initialLang);
 
     this.translate.onLangChange.subscribe(() => {
       this.translate.get('PAGE_TITLE').subscribe((res: string) => {
@@ -63,7 +72,17 @@ export class AppComponent {
   onScroll() {
     this.detectarSecaoAtiva();
     this.animeScroll();
+    if (isPlatformBrowser(this.platformId)) {
+      this.showBackToTop = window.scrollY > 300;
+    }
   }
+
+  scrollToTop() {
+    if (isPlatformBrowser(this.platformId)) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
   setSecaoAtiva(secao: string) {
     this.secaoAtiva = secao;
   }

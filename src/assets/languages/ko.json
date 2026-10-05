@@ -15,6 +15,7 @@
     "BASIC": "기초",
     "INTERMEDIARY": "중급",
     "ADVANCED": "고급",
+    "FLUENT_C1": "유창함 (C1)",
     "HOME": "홈",
     "ABOUT": "소개",
     "QUALIFICATIONS": "자격",
@@ -43,7 +44,7 @@
     "CONTACT": "연락처",
     "COMPUTER ENGINEER": "컴퓨터 엔지니어",
     "UTC_DEGREE": "Ingénieur en génie informatique spécialisé en IA",
-    "HOME_SUBTITLE": "AI 및 자동화 솔루션을 효율성과 시스템적 통합에 초점을 맞추어 개발합니다.",
+    "HOME_SUBTITLE": "예측 유지보수, 구조 건전성 모니터링 및 지능형 자동화를 전문으로 하는 머신러닝 및 임베디드 시스템 엔지니어.",
     "ABOUT ME": "인공지능과 자동화에 집중하는 컴퓨터 공학 학생입니다. 제 접근 방식은 소프트웨어의 기술적 엄밀함과 하드웨어에 대한 물리적 이해를 결합하여, 모델에서만 작동하는 것이 아니라 실행에서도 효율적인 솔루션을 추구합니다.<br><br>18살에 저는 자체 의류 브랜드를 창립하고 운영했으며, 이 경험을 통해 재정적 타당성과 자원 배분에 대한 비판적인 통찰력을 얻었습니다. 기회비용이 즉각적인 수익을 초과한다고 분석한 후, 기술 교육을 우선시하기 위해 사업을 종료하기로 결정했습니다. 오늘날 저는 이 분석적이고 능동적인 사고방식을 적용하여 실제 문제를 해결하는 지능형 시스템을 개발합니다.",
     "AGE": "나이",
     "YEARS": "세",
@@ -117,7 +118,11 @@
     "CARD-LONG-RAG": "검색 증강 생성(RAG) 시스템입니다. 최신 대규모 언어 모델(LLM)을 특화된 벡터 데이터베이스 및 문서 로더(LangChain 활용)와 결합하여, 비공개 문서 보관소를 기반으로 한 정확하고 맥락을 이해하는 맞춤형 답변을 제공합니다.",
     "ARTICLE_PIBIC_TITLE": "풍력 터빈 고장 예측 (PIBIC)",
     "ARTICLE_PIBIC_DESC": "주성분 분석(PCA) 및 로지스틱 회귀를 사용하여 풍력 터빈 블레이드의 균열을 예측하는 PUCPR의 학부 연구입니다.",
-    "ARTICLE_COBEM_LONG_DESC": "구조적 손상 예측을 위한 TabPFN 알고리즘 평가. 하이퍼파라미터 조정 없이 우수한 정확도를 입증했습니다. Mais detalhes técnicos e informações estendidas sobre o desenvolvimento desta pesquisa estarão disponíveis em breve. O trabalho explora metodologias e abordagens específicas da área.",
-    "ARTICLE_PIBIC_LONG_DESC": "Pesquisa de Iniciação Científica desenvolvida na PUCPR sob orientação do Prof. Dr. Helon Vicente Hultmann Ayala. O projeto, intitulado 'Desenvolvimento e Aplicações Inovadoras de Sistemas Inteligentes em Problemas de Regressão, Classificação e Previsão de Energia', utilizou Análise de Componentes Principais (PCA) e Regressão Logística para identificar tendências de rachaduras em pás de aerogeradores. A metodologia simplificou variáveis e alcançou acurácia de 92% na detecção preditiva, otimizando práticas de manutenção no setor de energia eólica.",
-    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI"
+    "ARTICLE_COBEM_LONG_DESC": "구조적 손상 예측을 위한 TabPFN 알고리즘 평가 연구입니다. 하이퍼파라미터 튜닝 없이도 뛰어난 정확도를 기록하며 기존 모델들을 능가하고 구조 건전성 모니터링(SHM) 분야에서의 강력한 잠재력을 입증했습니다. 본 연구 개발에 대한 자세한 기술적 세부 사항은 곧 공개될 예정입니다.",
+    "ARTICLE_PIBIC_LONG_DESC": "PUCPR에서 엘론 비센치 훌트만 아얄라 교수의 지도 하에 수행된 학부 연구(PIBIC)입니다. 주성분 분석(PCA)과 로지스틱 회귀를 활용하여 풍력 터빈 블레이드의 균열 경향을 조기에 식별했습니다. 변수를 차원 축소하여 92%의 예측 검출 정확도를 달성함으로써 풍력 에너지 분야의 유지보수 프로세스를 크게 최적화했습니다.",
+    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI",
+    "AVAILABLE_BADGE": "구직 중",
+    "LOCATION_LABEL": "위치",
+    "LOCATION_VALUE": "콩피에뉴, 프랑스 (파리 근무 가능)",
+    "PHOTO_ALT": "이아고 루다 라모스 사진"
 }

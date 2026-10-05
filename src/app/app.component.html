@@ -70,12 +70,21 @@
     </div>
 </section>
 
-<!-- ***** FOOTER & ECO-BADGE ***** -->
+<!-- ***** FOOTER, ECO-BADGE & BACK TO TOP ***** -->
 <footer>
     <div class="eco-badge-container">
-        <a href="https://www.ecoindex.fr/" target="_blank" rel="noopener noreferrer" class="eco-badge" title="EcoIndex A - High Environmental Performance">
-            <span class="eco-score">A</span>
+        <a href="https://www.ecoindex.fr/" target="_blank" rel="noopener noreferrer" class="eco-badge" title="EcoIndex B - Good Environmental Performance">
+            <span class="eco-score">B</span>
             <span class="eco-text">EcoIndex</span>
         </a>
     </div>
+
+    <!-- Back to top button -->
+    <button class="back-to-top"
+            [class.visible]="showBackToTop"
+            (click)="scrollToTop()"
+            aria-label="Voltar ao topo"
+            title="Voltar ao topo">
+        <i class="bi bi-chevron-up"></i>
+    </button>
 </footer>

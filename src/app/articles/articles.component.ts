@@ -10,6 +10,7 @@ import {
   PLATFORM_ID,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-articles',
@@ -22,7 +23,7 @@ export class ArticlesComponent implements AfterViewInit, OnDestroy {
   private readonly SOURCE = [
     {
       title: 'Tabular Prior-Data Fitted Network For Structural Damage Prediction',
-      link: '../assets/TABULAR_PRIOR-DATA_FITTED_NETWORK_FOR_STRUCTURAL.pdf',
+      link: 'https://www.researchgate.net/publication/400245149_Tabular_Prior-data_Fitted_Network_for_Structural_Damage_Prediction',
       description: 'ARTICLE_COBEM_DESC',
       longDescription: 'ARTICLE_COBEM_LONG_DESC',
       lang: 'en',
@@ -35,6 +36,7 @@ export class ArticlesComponent implements AfterViewInit, OnDestroy {
       description: 'ARTICLE_PIBIC_DESC',
       longDescription: 'ARTICLE_PIBIC_LONG_DESC',
       lang: 'pt',
+      isDynamicLang: true,
       pending: false,
       hideButton: true
     }
@@ -50,7 +52,19 @@ export class ArticlesComponent implements AfterViewInit, OnDestroy {
   private isDragging = false;
   private dragStartX = 0;
 
-  constructor(private zone: NgZone, @Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    private zone: NgZone,
+    @Inject(PLATFORM_ID) private platformId: Object,
+    public translate: TranslateService
+  ) {}
+
+  getArticleLang(article: any): string {
+    if (!article) return 'EN';
+    if (article.isDynamicLang) {
+      return this.translate.currentLang || 'en';
+    }
+    return article.lang;
+  }
 
   ngAfterViewInit(): void {
   }

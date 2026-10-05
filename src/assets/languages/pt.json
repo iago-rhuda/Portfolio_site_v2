@@ -13,6 +13,7 @@
     "INTERMEDIARY": "Intermediário",
     "ADVANCED": "Avançado",
     "ADVANCED_B2": "Avançado B2+",
+    "FLUENT_C1": "Fluente (C1)",
     "HOME": "INÍCIO",
     "ABOUT": "SOBRE MIM",
     "QUALIFICATIONS": "QUALIFICAÇÕES",
@@ -41,7 +42,7 @@
     "CONTACT": "CONTATO",
     "COMPUTER ENGINEER": "Engenheiro de Computação",
     "UTC_DEGREE": "Ingénieur en génie informatique spécialisé en IA",
-    "HOME_SUBTITLE": "Desenvolvendo soluções em IA e Automação com foco em eficiência e integração sistêmica.",
+    "HOME_SUBTITLE": "Engenheiro de Machine Learning e Sistemas Embarcados especializado em manutenção preditiva, monitoramento de integridade estrutural e automação inteligente.",
     "DOUBLE DEGREE": "Dupla Diplomação",
     "BACHELOR": "Bacharelado",
     "ABOUT ME": "Estudante de Engenharia de Computação com foco em Inteligência Artificial e Automação. Minha abordagem combina o rigor técnico do software com a compreensão física do hardware, buscando soluções que não apenas funcionem em modelos, mas que sejam eficientes na execução.<br><br>Aos 18 anos, fundei e geri uma marca de roupas própria, experiência que me proporcionou uma visão crítica sobre viabilidade financeira e alocação de recursos. Decidi encerrar a operação para priorizar minha formação técnica, após analisar que o custo de oportunidade superava os retornos imediatos. Hoje, aplico essa mentalidade analítica e proativa para desenvolver sistemas inteligentes que resolvem problemas reais.",
@@ -119,5 +120,9 @@
     "ARTICLE_PIBIC_DESC": "Pesquisa de Iniciação Científica pela PUCPR utilizando Análise de Componentes Principais (PCA) e Regressão Logística para prever rachaduras em pás de aerogeradores.",
     "ARTICLE_COBEM_LONG_DESC": "Avaliação do algoritmo TabPFN para predição de danos estruturais. Resultados indicam excelente precisão sem ajuste de hiperparâmetros, superando modelos tradicionais, com potencial para SHM. Mais detalhes técnicos e informações estendidas sobre o desenvolvimento desta pesquisa estarão disponíveis em breve. O trabalho explora metodologias e abordagens específicas da área.",
     "ARTICLE_PIBIC_LONG_DESC": "Pesquisa de Iniciação Científica desenvolvida na PUCPR sob orientação do Prof. Dr. Helon Vicente Hultmann Ayala. O projeto, intitulado 'Desenvolvimento e Aplicações Inovadoras de Sistemas Inteligentes em Problemas de Regressão, Classificação e Previsão de Energia', utilizou Análise de Componentes Principais (PCA) e Regressão Logística para identificar tendências de rachaduras em pás de aerogeradores. A metodologia simplificou variáveis e alcançou acurácia de 92% na detecção preditiva, otimizando práticas de manutenção no setor de energia eólica.",
-    "PAGE_TITLE": "Iago Rhudá Ramos | Engenheiro de Computação & IA"
+    "PAGE_TITLE": "Iago Rhudá Ramos | Engenheiro de Computação & IA",
+    "AVAILABLE_BADGE": "Disponível para trabalho",
+    "LOCATION_LABEL": "Localização",
+    "LOCATION_VALUE": "Compiègne, França (disponível para Paris)",
+    "PHOTO_ALT": "Foto de Iago Rhudá Ramos"
 }

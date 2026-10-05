@@ -9,8 +9,8 @@
                         <!-- Image Column -->
                         <div class="col-md-4 text-center mb-4 mb-md-0">
                             <div class="image-wrapper">
-                                <img src="../assets/img/imagem - Iago.png" class="img-fluid profile-img"
-                                    alt="Foto de Iago Rhudá Ramos">
+                                <img src="assets/img/iago-rhuda-ramos.png" class="img-fluid profile-img"
+                                    [alt]="'PHOTO_ALT' | translate">
                             </div>
                         </div>
 
@@ -21,12 +21,12 @@
 
                             <div class="info-grid">
                                 <div class="info-item">
-                                    <span class="label"><i class="bi bi-calendar-event"></i> {{ 'BIRTH' | translate }}:</span>
-                                    <span class="value">{{ getFormattedDate() }} | {{ calculateAge() }} {{ 'YEARS' | translate }}</span>
+                                    <span class="label"><i class="bi bi-calendar-event"></i> {{ 'AGE' | translate }}:</span>
+                                    <span class="value">{{ calculateAge() }} {{ 'YEARS' | translate }}</span>
                                 </div>
                                 <div class="info-item">
-                                    <span class="label"><i class="bi bi-geo-alt-fill text-danger"></i> Local:</span>
-                                    <span class="value">Paris, {{ 'FRANCE_COUNTRY' | translate }}</span>
+                                    <span class="label"><i class="bi bi-geo-alt-fill text-danger"></i> {{ 'LOCATION_LABEL' | translate }}:</span>
+                                    <span class="value">{{ 'LOCATION_VALUE' | translate }}</span>
                                 </div>
                             </div>
                         </div>

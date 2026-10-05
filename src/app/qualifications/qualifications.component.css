@@ -86,8 +86,33 @@
   border: 1px solid color-mix(in srgb, var(--accent-color) 25%, transparent);
 }
 
+.school-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0.2rem 0 0.35rem;
+}
+
+.school-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--text-secondary) 15%, transparent);
+  padding: 4px;
+}
+
+.flag-corner {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.4rem;
+  font-size: 1.4rem;
+  opacity: 0.9;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
 .school {
-  margin: 0 0 0.35rem;
+  margin: 0;
   font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: -0.025em;

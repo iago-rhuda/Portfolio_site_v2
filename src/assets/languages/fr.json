@@ -13,6 +13,7 @@
     "BASIC": "Élémentaire",
     "INTERMEDIARY": "Intermédiaire",
     "ADVANCED": "Avancé",
+    "FLUENT_C1": "Courant (C1)",
     "HOME": "ACCUEIL",
     "ABOUT": "À PROPOS",
     "QUALIFICATIONS": "QUALIFICATIONS",
@@ -41,7 +42,7 @@
     "CONTACT": "CONTACT",
     "COMPUTER ENGINEER": "Ingénieur Informaticien",
     "UTC_DEGREE": "Ingénieur en génie informatique spécialisé en IA",
-    "HOME_SUBTITLE": "Développement de solutions en IA et Automatisation avec un accent sur l'efficacité et l'intégration systémique.",
+    "HOME_SUBTITLE": "Ingénieur en Machine Learning & Systèmes Embarqués, spécialisé en maintenance prédictive, surveillance de l'intégrité structurale et automatisation intelligente.",
     "ABOUT ME": "Étudiant en Génie Informatique avec une spécialisation en Intelligence Artificielle et Automatisation. Mon approche combine la rigueur technique du logiciel avec la compréhension physique du matériel, en recherchant des solutions qui non seulement fonctionnent dans des modèles, mais sont efficaces en exécution.<br><br>À 18 ans, j'ai fondé et géré ma propre marque de vêtements, une expérience qui m'a donné un regard critique sur la viabilité financière et l'allocation des ressources. J'ai décidé de mettre fin aux opérations pour prioriser ma formation technique, après avoir analysé que le coût d'opportunité dépassait les retours immédiats. Aujourd'hui, j'applique cet état d'esprit analytique et proactif pour développer des systèmes intelligents qui résolvent des problèmes réels.",
     "AGE": "Âge",
     "YEARS": "Ans",
@@ -115,7 +116,11 @@
     "CARD-LONG-RAG": "Un système de génération augmentée par récupération (RAG) qui intègre des grands modèles de langage (LLM) modernes à des bases de données vectorielles spécialisées et des chargeurs de documents (avec LangChain) pour fournir des réponses précises et contextualisées basées sur des documents privés.",
     "ARTICLE_PIBIC_TITLE": "Prédiction de Pannes d'Éoliennes (PIBIC)",
     "ARTICLE_PIBIC_DESC": "Recherche de premier cycle à la PUCPR utilisant l'Analyse en Composantes Principales (ACP) et la Régression Logistique pour prédire les fissures dans les pales d'éoliennes.",
-    "ARTICLE_COBEM_LONG_DESC": "Évaluation de l'algorithme TabPFN pour la prédiction des dommages structurels. Les résultats indiquent une excellente précision sans réglage d'hyperparamètres. Mais detalhes técnicos e informações estendidas sobre o desenvolvimento desta pesquisa estarão disponíveis em breve. O trabalho explora metodologias e abordagens específicas da área.",
-    "ARTICLE_PIBIC_LONG_DESC": "Pesquisa de Iniciação Científica desenvolvida na PUCPR sob orientação do Prof. Dr. Helon Vicente Hultmann Ayala. O projeto, intitulado 'Desenvolvimento e Aplicações Inovadoras de Sistemas Inteligentes em Problemas de Regressão, Classificação e Previsão de Energia', utilizou Análise de Componentes Principais (PCA) e Regressão Logística para identificar tendências de rachaduras em pás de aerogeradores. A metodologia simplificou variáveis e alcançou acurácia de 92% na detecção preditiva, otimizando práticas de manutenção no setor de energia eólica.",
-    "PAGE_TITLE": "Iago Rhudá Ramos | Ingénieur en Informatique & IA"
+    "ARTICLE_COBEM_LONG_DESC": "Évaluation de l'algorithme TabPFN pour la prédiction des dommages structurels. Les résultats démontrent une excellente précision sans ajustement d'hyperparamètres, surpassant les modèles traditionnels avec un fort potentiel pour la surveillance de l'intégrité structurale. De plus amples détails techniques et des informations détaillées sur le développement de cette recherche seront bientôt disponibles.",
+    "ARTICLE_PIBIC_LONG_DESC": "Recherche d'initiation scientifique menée à la PUCPR sous la direction du Prof. Dr. Helon Vicente Hultmann Ayala. Le projet a utilisé l'analyse en composantes principales (ACP/PCA) et la régression logistique pour identifier les tendances de fissuration des pales d'éoliennes. La méthodologie a réduit les dimensions et atteint une précision de 92 % dans la détection prédictive, optimisant considérablement les pratiques de maintenance dans le secteur éolien.",
+    "PAGE_TITLE": "Iago Rhudá Ramos | Ingénieur en Informatique & IA",
+    "AVAILABLE_BADGE": "Disponible pour travailler",
+    "LOCATION_LABEL": "Localisation",
+    "LOCATION_VALUE": "Compiègne, France (mobile vers Paris)",
+    "PHOTO_ALT": "Photo de Iago Rhudá Ramos"
 }

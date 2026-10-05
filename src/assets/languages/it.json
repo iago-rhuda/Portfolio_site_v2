@@ -13,6 +13,7 @@
     "BASIC": "Base",
     "INTERMEDIARY": "Intermedio",
     "ADVANCED": "Avanzato",
+    "FLUENT_C1": "Fluente (C1)",
     "HOME": "HOME",
     "ABOUT": "CHI SONO",
     "QUALIFICATIONS": "QUALIFICHE",
@@ -41,7 +42,7 @@
     "CONTACT": "CONTATTI",
     "COMPUTER ENGINEER": "Ingegnere Informatico",
     "UTC_DEGREE": "Ingénieur en génie informatique spécialisé en IA",
-    "HOME_SUBTITLE": "Sviluppo di soluzioni di IA e Automazione con focus su efficienza e integrazione sistemica.",
+    "HOME_SUBTITLE": "Ingegnere di Machine Learning e Sistemi Embedded specializzato in manutenzione predittiva, monitoraggio dell'integrità strutturale e automazione intelligente.",
     "ABOUT ME": "Studente di Ingegneria Informatica con focus su Intelligenza Artificiale e Automazione. Il mio approccio combina il rigore tecnico del software con la comprensione fisica dell'hardware, cercando soluzioni che non solo funzionino nei modelli, ma siano efficienti nell'esecuzione.<br><br>A 18 anni, ho fondato e gestito il mio brand di abbigliamento, un'esperienza che mi ha dato una visione critica sulla fattibilità finanziaria e l'allocazione delle risorse. Ho deciso di chiudere le operazioni per dare priorità alla mia formazione tecnica, dopo aver analizzato che il costo opportunità superava i ritorni immediati. Oggi applico questa mentalità analitica e proattiva per sviluppare sistemi intelligenti che risolvono problemi reali.",
     "AGE": "Età",
     "YEARS": "Anni",
@@ -115,7 +116,11 @@
     "CARD-LONG-RAG": "Un sistema di Generazione Aumentata da Recupero (RAG) che integra modelli linguistici di grandi dimensioni (LLM) con database vettoriali e caricatori di documenti dedicati (usando LangChain) per fornire risposte precise e contestualizzate a partire da documenti privati.",
     "ARTICLE_PIBIC_TITLE": "Previsione dei Guasti nelle Turbine Eoliche (PIBIC)",
     "ARTICLE_PIBIC_DESC": "Ricerca universitaria presso la PUCPR utilizzando l'Analisi delle Componenti Principali (PCA) e la Regressione Logistica per prevedere le crepe nelle pale delle turbine eoliche.",
-    "ARTICLE_COBEM_LONG_DESC": "Valutazione dell'algoritmo TabPFN per la previsione dei danni strutturali. I risultati indicano un'eccellente precisione senza regolazione degli iperparametri. Mais detalhes técnicos e informações estendidas sobre o desenvolvimento desta pesquisa estarão disponíveis em breve. O trabalho explora metodologias e abordagens específicas da área.",
-    "ARTICLE_PIBIC_LONG_DESC": "Pesquisa de Iniciação Científica desenvolvida na PUCPR sob orientação do Prof. Dr. Helon Vicente Hultmann Ayala. O projeto, intitulado 'Desenvolvimento e Aplicações Inovadoras de Sistemas Inteligentes em Problemas de Regressão, Classificação e Previsão de Energia', utilizou Análise de Componentes Principais (PCA) e Regressão Logística para identificar tendências de rachaduras em pás de aerogeradores. A metodologia simplificou variáveis e alcançou acurácia de 92% na detecção preditiva, otimizando práticas de manutenção no setor de energia eólica.",
-    "PAGE_TITLE": "Iago Rhudá Ramos | Ingegnere Informatico & IA"
+    "ARTICLE_COBEM_LONG_DESC": "Valutazione dell'algoritmo TabPFN per la previsione dei danni strutturali. I risultati indicano un'eccellente precisione senza regolazione degli iperparametri, superando i modelli tradizionali con un grande potenziale per il monitoraggio dell'integrità strutturale (SHM). Maggiori dettagli tecnici e informazioni approfondite sullo sviluppo di questa ricerca saranno presto disponibili.",
+    "ARTICLE_PIBIC_LONG_DESC": "Ricerca di iniziazione scientifica condotta presso la PUCPR sotto la supervisione del Prof. Dr. Helon Vicente Hultmann Ayala. Il progetto ha utilizzato l'Analisi delle Componenti Principali (PCA) e la Regressione Logistica per identificare fessurazioni nelle pale delle turbine eoliche. La metodologia ha ridotto le dimensioni ottenendo un'accuratezza del 92% nella diagnosi predittiva, ottimizzando significativamente le pratiche di manutenzione nel settore eolico.",
+    "PAGE_TITLE": "Iago Rhudá Ramos | Ingegnere Informatico & IA",
+    "AVAILABLE_BADGE": "Disponibile per lavoro",
+    "LOCATION_LABEL": "Posizione",
+    "LOCATION_VALUE": "Compiègne, Francia (disponibile per Parigi)",
+    "PHOTO_ALT": "Foto di Iago Rhudá Ramos"
 }

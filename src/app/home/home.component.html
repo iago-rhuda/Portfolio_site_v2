@@ -3,7 +3,7 @@
   <!-- Available badge -->
   <div class="availability-badge" data-anime="down">
     <span class="badge-dot"></span>
-    <span class="badge-text">Available for opportunities</span>
+    <span class="badge-text">{{ 'AVAILABLE_BADGE' | translate }}</span>
   </div>
 
   <!-- Name with animated gradient -->
@@ -17,8 +17,8 @@
 
   <!-- CTA row -->
   <div class="hero-cta" data-anime="up">
-    <a href="#PORTFOLIO" class="btn-apple">{{ 'PORTFOLIO' | translate }}</a>
-    <a href="#CONTACT" class="btn-apple btn-apple-outline">{{ 'CONTACT' | translate }}</a>
+    <a href="#PORTFOLIO" (click)="scrollToSection($event, 'PORTFOLIO')" class="btn-apple">{{ 'PORTFOLIO' | translate }}</a>
+    <a href="#CONTACT" (click)="scrollToSection($event, 'CONTACT')" class="btn-apple btn-apple-outline">{{ 'CONTACT' | translate }}</a>
   </div>
 
 </div>

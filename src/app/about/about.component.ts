@@ -15,17 +15,6 @@ export class AboutComponent {
     return Math.floor(timeDiff / (1000 * 3600 * 24 * 365.25));
   }
 
-  public getFormattedDate(): string {
-    const birthDate = new Date(2003, 1, 7); // Feb 7
-    const currentLang = this.translate.currentLang;
-    const localeMap: { [key: string]: string } = {
-      'pt': 'pt-BR', 'en': 'en-US', 'fr': 'fr-FR', 'it': 'it-IT',
-      'de': 'de-DE', 'ko': 'ko-KR', 'ja': 'ja-JP', 'zh': 'zh-CN'
-    };
-    const locale = localeMap[currentLang] || 'en-US';
-    return birthDate.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
-  }
-
   public hobbies = [
     {
       icon: 'bi-rocket-takeoff',

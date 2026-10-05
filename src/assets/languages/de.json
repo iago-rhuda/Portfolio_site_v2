@@ -13,6 +13,7 @@
     "BASIC": "Grundlagen",
     "INTERMEDIARY": "Mittelstufe",
     "ADVANCED": "Fortgeschritten",
+    "FLUENT_C1": "Fließend (C1)",
     "HOME": "STARTSEITE",
     "ABOUT": "ÜBER MICH",
     "QUALIFICATIONS": "QUALIFIKATIONEN",
@@ -41,7 +42,7 @@
     "CONTACT": "KONTAKT",
     "COMPUTER ENGINEER": "Computer Ingenieur",
     "UTC_DEGREE": "Ingénieur en génie informatique spécialisé en IA",
-    "HOME_SUBTITLE": "Entwicklung von KI- und Automatisierungslösungen mit Fokus auf Effizienz und systemische Integration.",
+    "HOME_SUBTITLE": "Ingenieur für maschinelles Lernen und eingebettete Systeme, spezialisiert auf vorausschauende Wartung, strukturelle Zustandsüberwachung und intelligente Automatisierung.",
     "ABOUT ME": "Informatikingenieur-Student mit Fokus auf Künstliche Intelligenz und Automatisierung. Mein Ansatz kombiniert die technische Strenge der Software mit dem physischen Verständnis von Hardware und sucht Lösungen, die nicht nur in Modellen funktionieren, sondern in der Ausführung effizient sind.<br><br>Mit 18 Jahren gründete und führte ich meine eigene Modemarke, eine Erfahrung, die mir kritische Einblicke in finanzielle Tragfähigkeit und Ressourcenallokation gab. Ich entschied mich, den Betrieb einzustellen, um meine technische Ausbildung zu priorisieren, nachdem ich analysiert hatte, dass die Opportunitätskosten die unmittelbaren Erträge überwiegen. Heute wende ich diese analytische und proaktive Denkweise an, um intelligente Systeme zu entwickeln, die reale Probleme lösen.",
     "AGE": "Alter",
     "YEARS": "Jahre",
@@ -115,7 +116,11 @@
     "CARD-LONG-RAG": "Ein Retrieval-Augmented Generation (RAG) System, das moderne Large Language Models (LLMs) mit spezialisierten Vektordatenbanken und Dokumenten-Loadern (mittels LangChain) verknüpft, um präzise, kontextbezogene Antworten auf Basis privater Dokumentenarchive zu liefern.",
     "ARTICLE_PIBIC_TITLE": "Vorhersage von Windturbinenausfällen (PIBIC)",
     "ARTICLE_PIBIC_DESC": "Forschungsprojekt an der PUCPR zur Vorhersage von Rissen in Windturbinenblättern mittels Hauptkomponentenanalyse (PCA) und logistischer Regression.",
-    "ARTICLE_COBEM_LONG_DESC": "Evaluierung des TabPFN-Algorithmus zur Vorhersage von Strukturschäden. Ergebnisse zeigen exzellente Genauigkeit ohne Hyperparameter-Tuning. Mais detalhes técnicos e informações estendidas sobre o desenvolvimento desta pesquisa estarão disponíveis em breve. O trabalho explora metodologias e abordagens específicas da área.",
-    "ARTICLE_PIBIC_LONG_DESC": "Pesquisa de Iniciação Científica desenvolvida na PUCPR sob orientação do Prof. Dr. Helon Vicente Hultmann Ayala. O projeto, intitulado 'Desenvolvimento e Aplicações Inovadoras de Sistemas Inteligentes em Problemas de Regressão, Classificação e Previsão de Energia', utilizou Análise de Componentes Principais (PCA) e Regressão Logística para identificar tendências de rachaduras em pás de aerogeradores. A metodologia simplificou variáveis e alcançou acurácia de 92% na detecção preditiva, otimizando práticas de manutenção no setor de energia eólica.",
-    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI"
+    "ARTICLE_COBEM_LONG_DESC": "Evaluierung des TabPFN-Algorithmus zur Vorhersage von Strukturschäden. Ergebnisse zeigen exzellente Genauigkeit ohne Hyperparameter-Tuning, übertreffen traditionelle Modelle und bieten hohes Potenzial für die strukturelle Zustandsüberwachung (SHM). Weitere technische Details und erweiterte Informationen zur Entwicklung dieser Forschung werden in Kürze verfügbar sein.",
+    "ARTICLE_PIBIC_LONG_DESC": "Wissenschaftliche Forschungsarbeit an der PUCPR unter der Betreuung von Prof. Dr. Helon Vicente Hultmann Ayala. Das Projekt nutzte Hauptkomponentenanalyse (PCA) und logistische Regression zur Erkennung von Rissbildungen an Windturbinenflügeln. Die Methodik reduzierte Dimensionen und erzielte eine Genauigkeit von 92 % bei der prädiktiven Erkennung, wodurch die Instandhaltungspraktiken im Windenergiesektor deutlich optimiert wurden.",
+    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI",
+    "AVAILABLE_BADGE": "Offen für Arbeit",
+    "LOCATION_LABEL": "Standort",
+    "LOCATION_VALUE": "Compiègne, Frankreich (offen für Paris)",
+    "PHOTO_ALT": "Foto von Iago Rhudá Ramos"
 }

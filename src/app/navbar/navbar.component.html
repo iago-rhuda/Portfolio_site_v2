@@ -6,24 +6,42 @@
 
         <!-- Nav Links Container -->
         <div class="nav-links" [class.show]="isMenuOpen">
-                <a href="#HOME" (click)="setSecaoAtiva('HOME')" [class.active]="secaoAtiva === 'HOME'"
-                        class="nav-link active" [attr.data-target]="'HOME' | translate"><i
-                                class="bi bi-house-door"></i></a>
-                <a href="#ABOUT" (click)="setSecaoAtiva('ABOUT')" [class.active]="secaoAtiva === 'ABOUT'"
-                        class="nav-link" [attr.data-target]="'ABOUT' | translate"><i class="bi bi-person"></i></a>
-                <a href="#QUALIFICATIONS" (click)="setSecaoAtiva('QUALIFICATIONS')"
+                <a href="#HOME" (click)="scrollToSection($event, 'HOME')" [class.active]="secaoAtiva === 'HOME'"
+                        class="nav-link active" [attr.data-target]="'HOME' | translate">
+                        <i class="bi bi-house-door"></i>
+                        <span class="mobile-nav-text">{{ 'HOME' | translate }}</span>
+                </a>
+                <a href="#ABOUT" (click)="scrollToSection($event, 'ABOUT')" [class.active]="secaoAtiva === 'ABOUT'"
+                        class="nav-link" [attr.data-target]="'ABOUT' | translate">
+                        <i class="bi bi-person"></i>
+                        <span class="mobile-nav-text">{{ 'ABOUT' | translate }}</span>
+                </a>
+                <a href="#QUALIFICATIONS" (click)="scrollToSection($event, 'QUALIFICATIONS')"
                         [class.active]="secaoAtiva === 'QUALIFICATIONS'" class="nav-link"
-                        [attr.data-target]="'QUALIFICATIONS' | translate"><i class="bi bi-book"></i></a>
-                <a href="#SKILLS" (click)="setSecaoAtiva('SKILLS')" [class.active]="secaoAtiva === 'SKILLS'"
-                        class="nav-link" [attr.data-target]="'SKILLS' | translate"><i class="bi bi-box-seam"></i></a>
-                <a href="#PORTFOLIO" (click)="setSecaoAtiva('PORTFOLIO')" [class.active]="secaoAtiva === 'PORTFOLIO'"
-                        class="nav-link" [attr.data-target]="'PORTFOLIO' | translate"><i class="bi bi-award"></i></a>
-                <a href="#ARTICLES" (click)="setSecaoAtiva('ARTICLES')" [class.active]="secaoAtiva === 'ARTICLES'"
-                        class="nav-link" [attr.data-target]="'ARTICLES' | translate"><i class="bi bi-newspaper"></i></a>
-
-                <a href="#CONTACT" (click)="setSecaoAtiva('CONTACT')" [class.active]="secaoAtiva === 'CONTACT'"
-                        class="nav-link" [attr.data-target]="'CONTACT' | translate"><i
-                                class="bi bi-chat-text-fill"></i></a>
+                        [attr.data-target]="'QUALIFICATIONS' | translate">
+                        <i class="bi bi-book"></i>
+                        <span class="mobile-nav-text">{{ 'QUALIFICATIONS' | translate }}</span>
+                </a>
+                <a href="#SKILLS" (click)="scrollToSection($event, 'SKILLS')" [class.active]="secaoAtiva === 'SKILLS'"
+                        class="nav-link" [attr.data-target]="'SKILLS' | translate">
+                        <i class="bi bi-box-seam"></i>
+                        <span class="mobile-nav-text">{{ 'SKILLS' | translate }}</span>
+                </a>
+                <a href="#PORTFOLIO" (click)="scrollToSection($event, 'PORTFOLIO')" [class.active]="secaoAtiva === 'PORTFOLIO'"
+                        class="nav-link" [attr.data-target]="'PORTFOLIO' | translate">
+                        <i class="bi bi-award"></i>
+                        <span class="mobile-nav-text">{{ 'PORTFOLIO' | translate }}</span>
+                </a>
+                <a href="#ARTICLES" (click)="scrollToSection($event, 'ARTICLES')" [class.active]="secaoAtiva === 'ARTICLES'"
+                        class="nav-link" [attr.data-target]="'ARTICLES' | translate">
+                        <i class="bi bi-newspaper"></i>
+                        <span class="mobile-nav-text">{{ 'ARTICLES' | translate }}</span>
+                </a>
+                <a href="#CONTACT" (click)="scrollToSection($event, 'CONTACT')" [class.active]="secaoAtiva === 'CONTACT'"
+                        class="nav-link" [attr.data-target]="'CONTACT' | translate">
+                        <i class="bi bi-chat-text-fill"></i>
+                        <span class="mobile-nav-text">{{ 'CONTACT' | translate }}</span>
+                </a>
         </div>
 
 </nav>

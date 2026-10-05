@@ -14,6 +14,7 @@
     "INTERMEDIARY": "Intermediate",
     "ADVANCED": "Advanced",
     "ADVANCED_B2": "Advanced B2+",
+    "FLUENT_C1": "Fluent (C1)",
     "HOME": "HOME",
     "ABOUT": "ABOUT ME",
     "QUALIFICATIONS": "QUALIFICATIONS",
@@ -42,7 +43,7 @@
     "CONTACT": "CONTACT",
     "COMPUTER ENGINEER": "Computer Engineer",
     "UTC_DEGREE": "Ingénieur en génie informatique spécialisé en IA",
-    "HOME_SUBTITLE": "Building AI and Automation solutions focused on efficiency and real-world integration.",
+    "HOME_SUBTITLE": "Machine Learning & Embedded Systems Engineer specializing in predictive maintenance, structural health monitoring and intelligent automation.",
     "DOUBLE DEGREE": "Double Degree",
     "BACHELOR": "Bachelor's Degree",
     "ABOUT ME": "Computer Engineering student specializing in Artificial Intelligence and Automation. My approach bridges the technical precision of software with the physical constraints of hardware, delivering solutions that are not only theoretically sound but operationally efficient.<br><br>At 18, I founded and managed my own clothing brand — an experience that sharpened my understanding of financial viability, resource allocation, and strategic decision-making. After determining that the opportunity cost outweighed the immediate returns, I redirected my focus toward technical education. Today, I channel that same analytical mindset into building intelligent systems that solve real-world problems.",
@@ -120,5 +121,9 @@
     "ARTICLE_PIBIC_DESC": "Undergraduate Research at PUCPR using Principal Component Analysis (PCA) and Logistic Regression to predict cracks in wind turbine blades.",
     "ARTICLE_COBEM_LONG_DESC": "Evaluation of the TabPFN algorithm for structural damage prediction. Results demonstrate excellent accuracy without hyperparameter tuning, outperforming traditional models with strong potential for structural health monitoring. Further technical details and extended information about the development of this research will be available soon.",
     "ARTICLE_PIBIC_LONG_DESC": "Undergraduate Research developed at PUCPR under the supervision of Prof. Dr. Helon Vicente Hultmann Ayala. The project utilized Principal Component Analysis (PCA) and Logistic Regression to identify crack trends in wind turbine blades. The methodology reduced dimensions and achieved 92% accuracy in predictive detection, significantly optimizing maintenance practices in the wind energy sector.",
-    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI"
+    "PAGE_TITLE": "Iago Rhudá Ramos | Computer Engineer & AI",
+    "AVAILABLE_BADGE": "Open to work",
+    "LOCATION_LABEL": "Location",
+    "LOCATION_VALUE": "Compiègne, France (open to Paris)",
+    "PHOTO_ALT": "Photo of Iago Rhudá Ramos"
 }
