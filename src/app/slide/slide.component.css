@@ -3,16 +3,16 @@
    ============================================================ */
 
 .portfolio-section {
-  padding: 7rem 0 6rem;
+  padding: 0;
   width: 100%;
   overflow: hidden;
-  background: var(--bg-primary);
+  background: transparent;
 }
 
 /* Section Header */
 .section-header {
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
   padding: 0 2rem;
 }
 
@@ -31,7 +31,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 8rem;
+  width: 6rem;
   z-index: 3;
   pointer-events: none;
 }
@@ -52,16 +52,17 @@
 .project-track {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   overflow-x: auto;
   overflow-y: visible;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 1.5rem 6rem 2.5rem;
+  padding: 1rem 3rem 1.5rem;
   cursor: grab;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  /* No scroll-behavior here — TS handles it contextually */
 }
 
 .project-track:active { cursor: grabbing; }
@@ -71,16 +72,17 @@
    PROJECT CARD
    ============================================================ */
 .project-card {
-  flex: 0 0 300px;
-  scroll-snap-align: start;
+  flex: 0 0 320px;
+  max-width: 340px;
+  scroll-snap-align: center;
   background: var(--bg-glass);
   border: 1px solid var(--bg-glass-border);
   border-radius: 20px;
-  padding: 1.4rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
-  min-height: 270px;
+  gap: 0.85rem;
+  min-height: 250px;
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(16px);
@@ -91,6 +93,19 @@
     border-color 0.3s ease;
   will-change: transform;
   user-select: none;
+}
+
+/* Featured Card — subtle accent glow */
+.project-card.card-featured {
+  border-color: color-mix(in srgb, var(--accent-color) 50%, transparent);
+  box-shadow: 0 0 25px color-mix(in srgb, var(--accent-color) 16%, transparent), var(--shadow-card);
+  transform: translateY(-4px);
+}
+
+.project-card.card-featured:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 35px color-mix(in srgb, var(--accent-color) 25%, transparent), var(--shadow-hover);
 }
 
 /* Subtle radial glow on hover */
@@ -124,14 +139,45 @@
 }
 
 /* ============================================================
-   CARD TOP
+   CARD TOP & BADGES
    ============================================================ */
 .card-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  min-height: 30px;
+  flex-wrap: wrap;
+}
+
+.card-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.status-badge.badge-in-progress {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 50px;
+  background: rgba(226, 180, 136, 0.15);
+  border: 1px solid rgba(226, 180, 136, 0.35);
+  color: var(--accent-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.badge-in-progress .pulse-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  animation: pulse-dot 2s infinite;
 }
 
 /* Category Badge */
@@ -186,6 +232,8 @@
   color: var(--accent-color);
   border-color: color-mix(in srgb, var(--accent-color) 28%, transparent);
   background: color-mix(in srgb, var(--accent-color) 7%, transparent);
+  font-size: 0.74rem;
+  padding: 0.25rem 0.55rem;
 }
 
 .visit-btn:hover {

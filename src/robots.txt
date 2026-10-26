@@ -1,0 +1,6 @@
+# Robots.txt for https://iagoramos.com
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://iagoramos.com/sitemap.xml

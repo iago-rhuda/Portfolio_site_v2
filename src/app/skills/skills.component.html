@@ -1,127 +1,126 @@
+<div class="section-header text-center" data-anime="down">
+    <span class="apple-section-eyebrow">{{ 'TECHNICAL_CORE' | translate }}</span>
+    <h2 class="apple-section-title">{{ 'SKILLS' | translate }}</h2>
+    <p class="apple-section-subtitle">{{ 'SKILLS_SUBTITLE' | translate }}</p>
+</div>
+
 <div class="skills-container" data-anime="up">
 
-    <div class="row">
-        <!-- Column 1: Programming & AI -->
-        <div class="col-lg-4 mb-4">
-            <h2 class="section-title"><i class="bi bi-cpu-fill"></i> {{ 'SKILLS_PROG_AI_TITLE' | translate }}</h2>
-
-            <!-- Python Ecosystem -->
-            <div class="skill-card">
-                <div class="card-icon"><i class="bi bi-filetype-py"></i></div>
+    <div class="row g-3">
+        <!-- Card 1: ML & Tabular AI -->
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="card-icon"><i class="bi bi-cpu-fill"></i></div>
                 <div class="card-content">
-                    <h3 class="main-card-title">{{ 'SKILLS_PYTHON' | translate }}</h3>
-
-                    <!-- Data Science -->
-                    <div class="sub-skill-section">
-                        <h4 class="sub-skill-title">{{ 'SKILLS_DS_ANALYTICS' | translate }}</h4>
-                        <div class="tags">
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">Numpy</span>
-                        </div>
-                    </div>
-
-                    <!-- ML & DL -->
-                    <div class="sub-skill-section">
-                        <h4 class="sub-skill-title">{{ 'SKILLS_ML_DL' | translate }}</h4>
-                        <div class="tags">
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Scikit-Learn</span>
-                            <span class="skill-tag">TabPFN</span>
-                        </div>
-                    </div>
-
-                    <!-- Web -->
-                    <div class="sub-skill-section">
-                        <h4 class="sub-skill-title">{{ 'SKILLS_WEB' | translate }}</h4>
-                        <div class="tags">
-                            <span class="skill-tag">Flask</span>
-                        </div>
+                    <h3 class="main-card-title">{{ 'SKILLS_ML_DATA_TITLE' | translate }}</h3>
+                    <p class="skill-card-desc">{{ 'SKILLS_ML_DATA_DESC' | translate }}</p>
+                    <div class="tags">
+                        <span class="skill-tag highlight-tag">TabPFN</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Programming Languages -->
-            <div class="skill-card">
-                <div class="card-icon"><i class="bi bi-code-square"></i></div>
+        <!-- Card 2: LLM & RAG Systems -->
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="card-icon"><i class="bi bi-diagram-3-fill"></i></div>
                 <div class="card-content">
-                    <h3>{{ 'SKILLS_PROG_LANGS' | translate }}</h3>
+                    <h3 class="main-card-title">{{ 'SKILLS_LLM_RAG_TITLE' | translate }}</h3>
+                    <p class="skill-card-desc">{{ 'SKILLS_LLM_RAG_DESC' | translate }}</p>
                     <div class="tags">
-                        <span class="skill-tag">HTML*</span>
-                        <span class="skill-tag">GO</span>
-                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag highlight-tag">LangChain</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Vector DBs</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Knowledge Graphs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Embedded Systems & IoT -->
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="card-icon"><i class="bi bi-motherboard-fill"></i></div>
+                <div class="card-content">
+                    <h3 class="main-card-title">{{ 'SKILLS_EMBEDDED_TITLE' | translate }}</h3>
+                    <p class="skill-card-desc">{{ 'SKILLS_EMBEDDED_DESC' | translate }}</p>
+                    <div class="tags">
+                        <span class="skill-tag highlight-tag">ESP32</span>
                         <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">Lisp</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Column 2: Hardware & Systems -->
-        <div class="col-lg-4 mb-4">
-            <h2 class="section-title"><i class="bi bi-motherboard-fill"></i> {{ 'SKILLS_HARDWARE_TITLE' | translate }}
-            </h2>
-
-            <!-- Hardware (Microcontrollers) -->
-            <div class="skill-card">
-                <div class="card-icon"><i class="bi bi-cpu"></i></div>
-                <div class="card-content">
-                    <h3>{{ 'SKILLS_MICROCONTROLLERS' | translate }}</h3>
-                    <div class="tags">
-                        <span class="skill-tag">ESP32</span>
                         <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Sensors & Telemetry</span>
+                        <span class="skill-tag">IoT Protocols</span>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Systems -->
-            <div class="skill-card">
-                <div class="card-icon"><i class="bi bi-terminal"></i></div>
+        <!-- Card 4: Automation & Backend -->
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="card-icon"><i class="bi bi-gear-wide-connected"></i></div>
                 <div class="card-content">
-                    <h3>{{ 'SKILLS_SYSTEMS' | translate }}</h3>
+                    <h3 class="main-card-title">{{ 'SKILLS_AUTO_TITLE' | translate }}</h3>
+                    <p class="skill-card-desc">{{ 'SKILLS_AUTO_DESC' | translate }}</p>
                     <div class="tags">
-                        <span class="skill-tag">{{ 'SKILLS_LINUX' | translate }}</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Windows</span>
+                        <span class="skill-tag highlight-tag">Python</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Zeev (BPMN)</span>
+                        <span class="skill-tag">Flask</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: Systems & Tooling -->
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="card-icon"><i class="bi bi-terminal-fill"></i></div>
+                <div class="card-content">
+                    <h3 class="main-card-title">{{ 'SKILLS_TOOLS_TITLE' | translate }}</h3>
+                    <p class="skill-card-desc">{{ 'SKILLS_TOOLS_DESC' | translate }}</p>
+                    <div class="tags">
+                        <span class="skill-tag">Linux (Debian & Fedora)</span>
+                        <span class="skill-tag">Git & GitHub</span>
                         <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">SQL</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Column 3: Natural Languages -->
-        <div class="col-lg-4 mb-4">
-            <h2 class="section-title"><i class="bi bi-translate"></i> {{ 'LANGUAGES' | translate }}</h2>
-
-            <div class="language-grid-column">
-                <!-- Portuguese -->
-                <div class="skill-card">
-                    <div class="lang-flag">🇧🇷</div>
-                    <div class="card-content">
-                        <h3>{{ 'PORTUGUESE' | translate }}</h3>
-                        <span class="badge native">{{ 'NATIVE' | translate }}</span>
-                    </div>
-                </div>
-
-                <!-- English -->
-                <div class="skill-card">
-                    <div class="lang-flag">🇺🇸</div>
-                    <div class="card-content">
-                        <h3>{{ 'ENGLISH' | translate }}</h3>
-                        <span class="badge fluent">{{ 'FLUENT_C1' | translate }}</span>
-                    </div>
-                </div>
-
-                <!-- French -->
-                <div class="skill-card">
-                    <div class="lang-flag">🇫🇷</div>
-                    <div class="card-content">
-                        <h3>{{ 'FRENCH' | translate }}</h3>
-                        <span class="badge fluent">{{ 'FLUENT_C1' | translate }}</span>
+        <!-- Card 6: Natural Languages -->
+        <div class="col-lg-4 col-md-6">
+            <div class="skill-card h-100">
+                <div class="card-icon"><i class="bi bi-translate"></i></div>
+                <div class="card-content">
+                    <h3 class="main-card-title">{{ 'LANGUAGES' | translate }}</h3>
+                    <p class="skill-card-desc">{{ 'LANGUAGES_DESC' | translate }}</p>
+                    
+                    <div class="d-flex flex-column gap-1 mt-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span>🇧🇷 {{ 'PORTUGUESE' | translate }}</span>
+                            <span class="badge native">{{ 'NATIVE' | translate }}</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span>🇬🇧 {{ 'ENGLISH' | translate }}</span>
+                            <span class="badge fluent">{{ 'FLUENT_C1' | translate }}</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span>🇫🇷 {{ 'FRENCH' | translate }}</span>
+                            <span class="badge fluent">{{ 'FLUENT_C1' | translate }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>

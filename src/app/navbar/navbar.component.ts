@@ -11,29 +11,56 @@ import { isPlatformBrowser } from '@angular/common';
 export class NavbarComponent {
   secaoAtiva: string = 'HOME';
   isMenuOpen: boolean = false;
+  private isManualScrolling: boolean = false;
+  private scrollTimeout: any = null;
+
+  private readonly secoes: string[] = [
+    'HOME',
+    'ABOUT',
+    'EXPERIENCE',
+    'QUALIFICATIONS',
+    'SKILLS',
+    'PORTFOLIO',
+    'ARTICLES',
+    'CONTACT'
+  ];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
-    // Lógica para determinar a seção ativa durante o rolar da página
-    this.detectarSecaoAtiva();
+    if (!this.isManualScrolling) {
+      this.detectarSecaoAtiva();
+    }
   }
 
   setSecaoAtiva(secao: string) {
     this.secaoAtiva = secao;
-    this.isMenuOpen = false; // Close menu on selection
+    this.isMenuOpen = false;
   }
 
   scrollToSection(event: Event, secao: string) {
     event.preventDefault();
     this.setSecaoAtiva(secao);
+    this.isManualScrolling = true;
+
+    if (this.scrollTimeout) {
+      clearTimeout(this.scrollTimeout);
+    }
+
     if (isPlatformBrowser(this.platformId)) {
       const elemento = document.getElementById(secao);
       if (elemento) {
-        elemento.scrollIntoView({ behavior: 'smooth' });
+        const yOffset = -30;
+        const y = elemento.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
       }
     }
+
+    this.scrollTimeout = setTimeout(() => {
+      this.isManualScrolling = false;
+      this.detectarSecaoAtiva();
+    }, 850);
   }
 
   toggleMenu() {
@@ -42,19 +69,18 @@ export class NavbarComponent {
 
   private detectarSecaoAtiva() {
     if (!isPlatformBrowser(this.platformId)) return;
-    const secoes = ['HOME', 'ABOUT', 'QUALIFICATIONS', 'SKILLS', 'PORTFOLIO', 'ARTICLES', 'CURRICULUM', 'CONTACT'];
 
-    for (const secao of secoes) {
+    for (let i = this.secoes.length - 1; i >= 0; i--) {
+      const secao = this.secoes[i];
       const elemento = document.getElementById(secao);
-
       if (elemento) {
-        const retangulo = elemento.getBoundingClientRect();
-
-        if (retangulo.top <= 50 && retangulo.bottom >= 50) {
-          this.setSecaoAtiva(secao);
-          break;
+        const top = elemento.offsetTop;
+        if (window.scrollY >= top - 250) {
+          this.secaoAtiva = secao;
+          return;
         }
       }
     }
+    this.secaoAtiva = 'HOME';
   }
 }

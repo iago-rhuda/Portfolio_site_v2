@@ -22,9 +22,9 @@
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.9rem;
   border-radius: 50px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .badge-dot {
@@ -44,11 +44,11 @@
    NAME — Harmonized Warm Typography (EcoIndex A Optimized)
    ============================================================ */
 .hero-name {
-  font-size: clamp(2.6rem, 6.5vw, 5.2rem);
+  font-size: clamp(2.2rem, 5.5vw, 4.2rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1.1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   color: var(--text-primary);
   transition: transform 0.4s var(--ease-spring);
 }
@@ -62,21 +62,22 @@
    ============================================================ */
 .hero-title {
   font-family: var(--font-mono);
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-size: clamp(0.95rem, 2.2vw, 1.25rem);
   font-weight: 400;
   color: var(--text-secondary);
   letter-spacing: 0.02em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-size: clamp(0.95rem, 1.8vw, 1.08rem);
   color: var(--text-secondary);
-  max-width: 540px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  max-width: 580px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
   font-weight: 300;
 }
+
 
 /* ============================================================
    CTA BUTTONS
@@ -86,11 +87,65 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 1.75rem;
 }
 
 .hero-cta .btn-apple {
-  padding: 0.75rem 1.75rem;
+  padding: 0.75rem 1.8rem;
   font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ============================================================
+   KEY METRICS STRIP
+   ============================================================ */
+.hero-metrics-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.9rem 2rem;
+  background: var(--bg-glass);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: 50px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-card);
+  flex-wrap: wrap;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metric-value {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--accent-color);
+  line-height: 1.1;
+  font-family: var(--font-mono);
+}
+
+.metric-label {
+  font-size: 0.68rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.metric-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--bg-glass-border);
+  opacity: 0.8;
 }
 
 /* ============================================================
@@ -104,23 +159,6 @@
   width: 100%;
 }
 
-/* ============================================================
-   SCROLL INDICATOR
-   ============================================================ */
-.scroll-indicator {
-  position: absolute;
-  bottom: 85px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--text-tertiary);
-  animation: scroll-bounce 2.5s ease-in-out infinite;
-  opacity: 0.6;
-}
-
-@keyframes scroll-bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50%       { transform: translateX(-50%) translateY(8px); }
-}
 
 /* ============================================================
    RESPONSIVE

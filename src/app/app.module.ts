@@ -14,6 +14,7 @@ import { SwitchLangComponent } from './switch-lang/switch-lang.component';
 import { SlideComponent } from './slide/slide.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
 import { QualificationsComponent } from './qualifications/qualifications.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
@@ -28,6 +29,7 @@ import { ArticlesComponent } from './articles/articles.component';
     SlideComponent,
     HomeComponent,
     AboutComponent,
+    ExperienceComponent,
     QualificationsComponent,
     SkillsComponent,
     ContactComponent,

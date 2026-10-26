@@ -19,7 +19,77 @@
 
 .section-header {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ── Paris Internship Banner ── */
+.internship-banner {
+  background: var(--bg-glass);
+  border: 1px solid color-mix(in srgb, var(--accent-color) 35%, transparent);
+  border-radius: 24px;
+  padding: 2.2rem;
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.banner-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.9rem;
+  border-radius: 50px;
+  background: rgba(255, 69, 58, 0.12);
+  border: 1px solid rgba(255, 69, 58, 0.25);
+  color: #ff453a;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.banner-heading {
+  font-size: clamp(1.3rem, 3vw, 1.75rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.025em;
+  max-width: 680px;
+}
+
+.banner-text {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  max-width: 620px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.banner-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-email-text {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--accent-color);
+  font-size: 0.95rem;
 }
 
 .contact-grid {
@@ -32,7 +102,13 @@
   justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
   .contact-grid {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -1,38 +1,58 @@
-/* All sections now get padding from global styles.css section rule */
-/* Individual overrides only where needed */
-
-#HOME {
-  height: 100vh;
-  min-height: 640px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 2rem;
-  position: relative;
-  overflow: hidden;
-}
-
-
-
-/* ABOUT: let section padding handle spacing */
-#ABOUT    { background: var(--bg-primary); }
-#QUALIFICATIONS { background: var(--bg-secondary); }
-#SKILLS   { background: var(--bg-primary); }
-#ARTICLES { background: var(--bg-secondary); }
-#CONTACT  {
-  background: var(--bg-primary);
+/* ============================================================
+   SECTIONS — Full viewport, vertically centered
+   ============================================================ */
+#HOME,
+#ABOUT,
+#EXPERIENCE,
+#QUALIFICATIONS,
+#SKILLS,
+#PORTFOLIO,
+#ARTICLES,
+#CONTACT {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 70px 1.5rem 85px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
 }
 
-#CONTACT .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+#HOME {
+  background: var(--bg-primary);
+  text-align: center;
+}
+
+#ABOUT {
+  background: var(--bg-primary);
+}
+
+#EXPERIENCE {
+  background: var(--bg-secondary);
+  padding: 55px 1.5rem 65px;
+}
+
+#QUALIFICATIONS {
+  background: var(--bg-primary);
+}
+
+#SKILLS {
+  background: var(--bg-secondary);
+  padding: 55px 1.5rem 65px;
+}
+
+#PORTFOLIO {
+  background: var(--bg-primary);
+}
+
+#ARTICLES {
+  background: var(--bg-secondary);
+}
+
+#CONTACT {
+  background: var(--bg-primary);
 }
 
 /* Alternating bg creates subtle Apple-like rhythm */

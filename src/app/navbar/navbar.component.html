@@ -1,13 +1,13 @@
 <nav class="navbar" [class.expanded]="isMenuOpen">
         <!-- Hamburger Trigger (Mobile Only) -->
-        <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle Navigation">
+        <button class="hamburger" (click)="toggleMenu()" [attr.aria-label]="'NAV_TOGGLE' | translate">
                 <i class="bi" [class.bi-list]="!isMenuOpen" [class.bi-x-lg]="isMenuOpen"></i>
         </button>
 
         <!-- Nav Links Container -->
         <div class="nav-links" [class.show]="isMenuOpen">
                 <a href="#HOME" (click)="scrollToSection($event, 'HOME')" [class.active]="secaoAtiva === 'HOME'"
-                        class="nav-link active" [attr.data-target]="'HOME' | translate">
+                        class="nav-link" [attr.data-target]="'HOME' | translate">
                         <i class="bi bi-house-door"></i>
                         <span class="mobile-nav-text">{{ 'HOME' | translate }}</span>
                 </a>
@@ -15,6 +15,12 @@
                         class="nav-link" [attr.data-target]="'ABOUT' | translate">
                         <i class="bi bi-person"></i>
                         <span class="mobile-nav-text">{{ 'ABOUT' | translate }}</span>
+                </a>
+                <a href="#EXPERIENCE" (click)="scrollToSection($event, 'EXPERIENCE')"
+                        [class.active]="secaoAtiva === 'EXPERIENCE'" class="nav-link"
+                        [attr.data-target]="'EXPERIENCE' | translate">
+                        <i class="bi bi-briefcase"></i>
+                        <span class="mobile-nav-text">{{ 'EXPERIENCE' | translate }}</span>
                 </a>
                 <a href="#QUALIFICATIONS" (click)="scrollToSection($event, 'QUALIFICATIONS')"
                         [class.active]="secaoAtiva === 'QUALIFICATIONS'" class="nav-link"

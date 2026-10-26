@@ -9,12 +9,6 @@ import { TranslateService } from '@ngx-translate/core';
 export class AboutComponent {
   constructor(public translate: TranslateService) { }
 
-  public calculateAge(): number {
-    const birthDate = new Date(2003, 1, 7);
-    const timeDiff = Math.abs(Date.now() - birthDate.getTime());
-    return Math.floor(timeDiff / (1000 * 3600 * 24 * 365.25));
-  }
-
   public hobbies = [
     {
       icon: 'bi-rocket-takeoff',
@@ -33,19 +27,10 @@ export class AboutComponent {
       ]
     },
     {
-      icon: 'bi-grid-3x3',
-      key: 'HOBBY-3',
+      icon: 'bi-compass',
+      key: 'HOBBY-PERSONAL',
       topics: [
-        { label: 'HOBBY-3-TOPIC-1-LABEL', value: 'HOBBY-3-TOPIC-1-VALUE' },
-        { label: 'HOBBY-3-TOPIC-2-LABEL', value: 'HOBBY-3-TOPIC-2-VALUE' }
-      ]
-    },
-    {
-      icon: 'bi-music-note-beamed',
-      key: 'HOBBY-4',
-      topics: [
-        { label: 'HOBBY-4-TOPIC-1-LABEL', value: 'HOBBY-4-TOPIC-1-VALUE' },
-        { label: 'HOBBY-4-TOPIC-2-LABEL', value: 'HOBBY-4-TOPIC-2-VALUE' }
+        { label: 'HOBBY-PERSONAL-TOPIC-1-LABEL', value: 'HOBBY-PERSONAL-TOPIC-1-VALUE' }
       ]
     }
   ];

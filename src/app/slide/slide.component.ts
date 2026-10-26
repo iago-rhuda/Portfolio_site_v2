@@ -23,16 +23,46 @@ export class SlideComponent implements AfterViewInit, OnDestroy {
   // ── Source projects ─────────────────────────────────────────
   private readonly SOURCE: Project[] = [
     {
-      titleKey: 'PERSONAL-PORTFOLIO',
-      titleSuffix: 'v1',
-      descKey: 'CARD-TEXT-1/2',
-      longDescKey: 'CARD-LONG-1',
-      categoryKey: 'CAT-WEB',
-      categoryClass: 'cat-web',
-      techs: ['Bootstrap', 'HTML', 'CSS', 'JavaScript'],
-      githubUrl: 'https://github.com/iago-rhuda/portfolio-site',
-      visitUrl: 'https://harmonious-chebakia-277b16.netlify.app/',
-      visitKey: 'VISIT',
+      titleKey: 'SEARCH-ENGINE',
+      titleSuffix: null,
+      descKey: 'CARD-TEXT-SEARCH-ENGINE',
+      longDescKey: 'CARD-LONG-SEARCH-ENGINE',
+      categoryKey: 'CAT-AI-NLP',
+      categoryClass: 'cat-ai-nlp',
+      techs: ['Python', 'Flask', 'NLP', 'TF-IDF', 'Levenshtein'],
+      githubUrl: 'https://github.com/iago-rhuda/Search_Engine',
+      visitUrl: null,
+      visitKey: null,
+      isFeatured: false,
+      isInProgress: false,
+    },
+    {
+      titleKey: 'PROJECT_RAG_TITLE',
+      titleSuffix: null,
+      descKey: 'CARD-TEXT-RAG',
+      longDescKey: 'CARD-LONG-RAG',
+      categoryKey: 'CAT-AI-NLP',
+      categoryClass: 'cat-ai-nlp',
+      techs: ['Python', 'LangChain', 'Streamlit', 'Knowledge Graphs', 'Vector DB'],
+      githubUrl: 'https://github.com/iago-rhuda/RAG-Retrieval-Augmented-Generation-',
+      visitUrl: null,
+      visitKey: null,
+      isFeatured: true,
+      isInProgress: true,
+    },
+    {
+      titleKey: 'PROJECT_QUADROTOR_TITLE',
+      titleSuffix: null,
+      descKey: 'CARD-TEXT-QUADROTOR',
+      longDescKey: 'CARD-LONG-QUADROTOR',
+      categoryKey: 'CAT-ROBOTICS',
+      categoryClass: 'cat-desktop',
+      techs: ['UAV Dynamics', 'State Estimation', 'Control Theory', 'PIBIC'],
+      githubUrl: 'https://github.com/iago-rhuda',
+      visitUrl: null,
+      visitKey: null,
+      isFeatured: false,
+      isInProgress: false,
     },
     {
       titleKey: 'PERSONAL-PORTFOLIO',
@@ -41,38 +71,15 @@ export class SlideComponent implements AfterViewInit, OnDestroy {
       longDescKey: 'CARD-LONG-V2',
       categoryKey: 'CAT-WEB',
       categoryClass: 'cat-web',
-      techs: ['Angular', 'TypeScript', 'Bootstrap', 'i18n'],
+      techs: ['Angular', 'TypeScript', 'SSR/Prerender', 'i18n', 'CSS3'],
       githubUrl: 'https://github.com/iago-rhuda/portfolio-site-2.0',
-      visitUrl: null,
-      visitKey: null,
-    },
-    {
-      titleKey: 'SEARCH-ENGINE',
-      titleSuffix: null,
-      descKey: 'CARD-TEXT-SEARCH-ENGINE',
-      longDescKey: 'CARD-LONG-SEARCH-ENGINE',
-      categoryKey: 'CAT-AI-NLP',
-      categoryClass: 'cat-ai-nlp',
-      techs: ['Python', 'Flask', 'NLP', 'TF-IDF'],
-      githubUrl: 'https://github.com/iago-rhuda/Search_Engine',
-      visitUrl: 'https://search-engine-2fnl.onrender.com/',
-      visitKey: 'VISIT-APP',
-    },
-    {
-      titleKey: 'RAG',
-      titleSuffix: null,
-      descKey: 'CARD-TEXT-RAG',
-      longDescKey: 'CARD-LONG-RAG',
-      categoryKey: 'CAT-AI-NLP',
-      categoryClass: 'cat-ai-nlp',
-      techs: ['Python', 'LangChain', 'RAG', 'LLM'],
-      githubUrl: 'https://github.com/iago-rhuda/RAG-Retrieval-Augmented-Generation-',
-      visitUrl: null,
-      visitKey: null,
+      visitUrl: 'https://iagoramos.com',
+      visitKey: 'LIVE_DEMO',
+      isFeatured: false,
+      isInProgress: false,
     },
   ];
 
-  // Triple the list for infinite scroll illusion
   projects: Project[] = [...this.SOURCE];
 
   // ── Modal state ──────────────────────────────────────────────
@@ -228,4 +235,6 @@ interface Project {
   githubUrl: string | null;
   visitUrl: string | null;
   visitKey: string | null;
+  isFeatured?: boolean;
+  isInProgress?: boolean;
 }

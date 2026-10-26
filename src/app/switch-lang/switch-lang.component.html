@@ -18,7 +18,8 @@
 
     <!-- Theme Toggle Button -->
     <button class="theme-btn" (click)="toggleTheme()"
-      [title]="isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'">
+      [title]="(isDarkMode ? 'SWITCH_LIGHT_MODE' : 'SWITCH_DARK_MODE') | translate"
+      [attr.aria-label]="(isDarkMode ? 'SWITCH_LIGHT_MODE' : 'SWITCH_DARK_MODE') | translate">
       <i class="bi" [ngClass]="isDarkMode ? 'bi-sun-fill' : 'bi-moon-fill'"></i>
     </button>
 

@@ -1,7 +1,7 @@
 import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -17,10 +17,11 @@ export class AppComponent {
   constructor(
     private translate: TranslateService,
     private titleService: Title,
+    private metaService: Meta,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
-    this.translate.addLangs(['en', 'pt', 'fr', 'it', 'es', 'de', 'ko', 'ja', 'zh']);
-    const supported = ['en', 'pt', 'fr', 'it', 'es', 'de', 'ko', 'ja', 'zh'];
+    this.translate.addLangs(['en', 'fr', 'pt']);
+    const supported = ['en', 'fr', 'pt'];
     let initialLang = 'en';
     if (isPlatformBrowser(this.platformId)) {
       const savedLang = localStorage.getItem('portfolio_lang');
@@ -35,10 +36,30 @@ export class AppComponent {
     }
     this.translate.use(initialLang);
 
-    this.translate.onLangChange.subscribe(() => {
-      this.translate.get('PAGE_TITLE').subscribe((res: string) => {
-        this.titleService.setTitle(res);
-      });
+    this.translate.onLangChange.subscribe((event) => {
+      this.updateSeo(event.lang);
+    });
+
+    // Initial SEO update
+    this.updateSeo(initialLang);
+  }
+
+  private updateSeo(lang: string): void {
+    this.translate.get(['PAGE_TITLE', 'META_DESCRIPTION']).subscribe(translations => {
+      const title = translations['PAGE_TITLE'] || 'Iago Rhudá Ramos | Computer Engineer & AI';
+      const description = translations['META_DESCRIPTION'] || 'Computer Engineer & AI Researcher specializing in Machine Learning, predictive maintenance, embedded systems, and intelligent automation.';
+
+      this.titleService.setTitle(title);
+      this.metaService.updateTag({ name: 'description', content: description });
+      this.metaService.updateTag({ property: 'og:title', content: title });
+      this.metaService.updateTag({ property: 'og:description', content: description });
+      this.metaService.updateTag({ property: 'og:url', content: 'https://iagoramos.com/' + (lang === 'en' ? '' : lang) });
+      this.metaService.updateTag({ name: 'twitter:title', content: title });
+      this.metaService.updateTag({ name: 'twitter:description', content: description });
+
+      if (isPlatformBrowser(this.platformId)) {
+        document.documentElement.lang = lang;
+      }
     });
   }
 
@@ -89,7 +110,7 @@ export class AppComponent {
 
   private detectarSecaoAtiva() {
     if (!isPlatformBrowser(this.platformId)) return;
-    const secoes = ['HOME', 'ABOUT', 'QUALIFICATIONS', 'SKILLS', 'PORTFOLIO', 'ARTICLES', 'CURRICULUM', 'CONTACT'];
+    const secoes = ['HOME', 'ABOUT', 'EXPERIENCE', 'QUALIFICATIONS', 'SKILLS', 'PORTFOLIO', 'ARTICLES', 'CONTACT'];
 
     for (const secao of secoes) {
       const elemento = document.getElementById(secao);

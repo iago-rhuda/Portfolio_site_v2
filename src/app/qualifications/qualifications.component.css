@@ -28,7 +28,7 @@
 /* ── Timeline Item ── */
 .timeline-item {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 1.1rem;
   padding-left: 58px;
 }
 
@@ -37,8 +37,8 @@
   position: absolute;
   left: 11px;
   top: 4px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: var(--bg-primary);
   border: 2px solid var(--accent-color);
@@ -51,12 +51,20 @@
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-color) 20%, transparent);
 }
 
+.timeline-item-minor {
+  opacity: 0.75;
+}
+
+.timeline-item-minor .timeline-content {
+  padding: 0.75rem 1.25rem;
+}
+
 /* Content card */
 .timeline-content {
   background: var(--bg-glass);
   border: 1px solid var(--bg-glass-border);
   border-radius: 16px;
-  padding: 1.4rem 1.6rem;
+  padding: 1rem 1.35rem;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--shadow-card);

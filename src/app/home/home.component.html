@@ -3,29 +3,48 @@
   <!-- Available badge -->
   <div class="availability-badge" data-anime="down">
     <span class="badge-dot"></span>
-    <span class="badge-text">{{ 'AVAILABLE_BADGE' | translate }}</span>
+    <span class="badge-text">{{ 'AVAILABLE_BADGE' | translate }} — {{ 'AVAILABLE_DATE' | translate }}</span>
   </div>
 
   <!-- Name with animated gradient -->
   <h1 class="hero-name" data-anime="up">Iago Rhudá Ramos</h1>
 
-  <!-- Title -->
-  <h2 class="hero-title" data-anime="up">{{ 'COMPUTER ENGINEER' | translate }}</h2>
+  <!-- Role / Subtitle -->
+  <h2 class="hero-title" data-anime="up">{{ 'HERO_ROLE' | translate }}</h2>
 
   <!-- Subtitle -->
-  <p class="hero-subtitle" data-anime="down">{{ 'HOME_SUBTITLE' | translate }}</p>
+  <p class="hero-subtitle" data-anime="down">
+    {{ 'HOME_SUBTITLE' | translate }}
+  </p>
 
   <!-- CTA row -->
   <div class="hero-cta" data-anime="up">
-    <a href="#PORTFOLIO" (click)="scrollToSection($event, 'PORTFOLIO')" class="btn-apple">{{ 'PORTFOLIO' | translate }}</a>
-    <a href="#CONTACT" (click)="scrollToSection($event, 'CONTACT')" class="btn-apple btn-apple-outline">{{ 'CONTACT' | translate }}</a>
+    <a href="#CONTACT" (click)="scrollToSection($event, 'CONTACT')" class="btn-apple">
+      <i class="bi bi-chat-dots"></i> {{ 'CONTACT_ME' | translate }}
+    </a>
   </div>
 
-</div>
+  <!-- Key Metrics Strip (Real Data) -->
+  <div class="hero-metrics-strip" data-anime="up">
+    <div class="metric-item">
+      <span class="metric-value">{{ 'METRIC_FEATURED_VALUE' | translate }}</span>
+      <span class="metric-label">{{ 'METRIC_FEATURED_LABEL' | translate }}</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric-item">
+      <span class="metric-value">1</span>
+      <span class="metric-label">{{ 'METRIC_PUBLICATION_LABEL' | translate }}</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric-item">
+      <span class="metric-value">2</span>
+      <span class="metric-label">{{ 'METRIC_INTERNSHIPS_LABEL' | translate }}</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric-item">
+      <span class="metric-value">3</span>
+      <span class="metric-label">{{ 'METRIC_LANGUAGES_LABEL' | translate }}</span>
+    </div>
+  </div>
 
-<!-- Scroll indicator -->
-<div class="scroll-indicator" aria-hidden="true">
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
 </div>

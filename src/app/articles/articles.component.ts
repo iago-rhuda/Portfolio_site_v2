@@ -22,7 +22,7 @@ export class ArticlesComponent implements AfterViewInit, OnDestroy {
 
   private readonly SOURCE = [
     {
-      title: 'Tabular Prior-Data Fitted Network For Structural Damage Prediction',
+      title: 'ARTICLE_COBEM_TITLE',
       link: 'https://www.researchgate.net/publication/400245149_Tabular_Prior-data_Fitted_Network_for_Structural_Damage_Prediction',
       description: 'ARTICLE_COBEM_DESC',
       longDescription: 'ARTICLE_COBEM_LONG_DESC',

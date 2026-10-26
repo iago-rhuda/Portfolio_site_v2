@@ -1,0 +1,40 @@
+<div class="experience-section" data-anime="up">
+  <!-- Section Header -->
+  <div class="section-header text-center" data-anime="down">
+    <span class="apple-section-eyebrow">{{ 'CAREER_TRACK' | translate }}</span>
+    <h2 class="apple-section-title">{{ 'EXPERIENCE' | translate }}</h2>
+    <p class="apple-section-subtitle">{{ 'EXPERIENCE_SUBTITLE' | translate }}</p>
+  </div>
+
+  <!-- Timeline Cards Container -->
+  <div class="experience-container">
+    <div class="experience-card apple-card" *ngFor="let exp of experiences">
+      
+      <!-- Card Top: Company Badge, Period, Role Title, Location -->
+      <div class="exp-header">
+        <div class="exp-top-row">
+          <span class="exp-company-badge" [ngClass]="exp.badgeClass">{{ exp.company }}</span>
+          <span class="exp-period"><i class="bi bi-calendar3"></i> {{ exp.periodKey | translate }}</span>
+        </div>
+        <h3 class="exp-role-title">{{ exp.roleKey | translate }}</h3>
+        <p class="exp-location">
+          <i class="bi bi-geo-alt"></i> {{ exp.locationKey | translate }}
+        </p>
+      </div>
+
+      <!-- Bullets List -->
+      <ul class="exp-bullets">
+        <li *ngFor="let bKey of exp.bulletsKeys">
+          <i class="bi bi-check2-circle bullet-icon"></i>
+          <span [innerHTML]="bKey | translate"></span>
+        </li>
+      </ul>
+
+      <!-- Tech Pills -->
+      <div class="tech-pills" *ngIf="exp.techs.length > 0">
+        <span class="tech-pill" *ngFor="let tech of exp.techs">{{ tech }}</span>
+      </div>
+
+    </div>
+  </div>
+</div>

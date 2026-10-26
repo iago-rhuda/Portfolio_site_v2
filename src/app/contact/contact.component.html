@@ -1,59 +1,82 @@
 <div class="contact-wrapper" data-anime="up">
     <!-- Section Header -->
     <div class="section-header text-center" data-anime="down">
+        <span class="apple-section-eyebrow">{{ 'GET_IN_TOUCH' | translate }}</span>
         <h2 class="apple-section-title">{{ 'CONTACT' | translate }}</h2>
+        <p class="apple-section-subtitle">{{ 'CONTACT_SUBTITLE' | translate }}</p>
     </div>
 
+    <!-- Paris Internship Hero CTA Banner -->
+    <div class="internship-banner apple-card mb-4" data-anime="up">
+        <div class="banner-content">
+            <div class="banner-badge">
+                <i class="bi bi-geo-alt-fill text-danger"></i> Paris 2027
+            </div>
+            <h3 class="banner-heading">{{ 'INTERNSHIP_BANNER_TITLE' | translate }}</h3>
+            <p class="banner-text">{{ 'INTERNSHIP_BANNER_TEXT' | translate }}</p>
+            <div class="banner-actions">
+                <a href="https://www.linkedin.com/in/iago-rhuda-ramos/" target="_blank" rel="noopener noreferrer" class="btn-apple">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/iago-rhuda" target="_blank" rel="noopener noreferrer" class="btn-apple btn-apple-outline">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Grid -->
     <div class="contact-grid">
-    <!-- Github Card -->
-    <div class="card area-github" data-anime="up">
-        <div class="card-body">
-            <h4 class="card-title"><i class="bi bi-github"></i> GitHub:</h4>
-            <div class="content-wrapper">
-                <p class="card-text">{{ 'CONTACT-CARD-TEXT-3' | translate }}!</p>
-                <div class="div-button">
-                    <a href="https://github.com/iago-rhuda" target="_blank">
-                        <button type="button" class="btn-action">
-                            <i class="bi bi-github"></i> {{ 'ACCESS' | translate }}
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Linkedin Card -->
-    <div class="card area-linkedin" data-anime="right">
-        <div class="card-body">
-            <h4 class="card-title"><i class="bi bi-linkedin"></i> LinkedIn:</h4>
-            <div class="content-wrapper">
-                <p class="card-text">{{ 'CONTACT-CARD-TEXT-4' | translate }}.</p>
-                <div class="div-button">
-                    <a href="https://www.linkedin.com/in/iago-rhuda-ramos/" target="_blank" rel="noopener noreferrer">
-                        <button type="button" class="btn-action">
-                            <i class="bi bi-linkedin"></i> {{ 'ACCESS' | translate }}
-                        </button>
-                    </a>
+        <!-- Linkedin Card -->
+        <div class="card area-linkedin" data-anime="up">
+            <div class="card-body">
+                <h4 class="card-title"><i class="bi bi-linkedin"></i> LinkedIn:</h4>
+                <div class="content-wrapper">
+                    <p class="card-text">{{ 'CONTACT-CARD-TEXT-4' | translate }}</p>
+                    <div class="div-button">
+                        <a href="https://www.linkedin.com/in/iago-rhuda-ramos/" target="_blank" rel="noopener noreferrer">
+                            <button type="button" class="btn-action">
+                                <i class="bi bi-linkedin"></i> {{ 'VIEW_PROFILE' | translate }}
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Lattes Card -->
-    <div class="card area-lattes" data-anime="up">
-        <div class="card-body">
-            <h4 class="card-title"><i class="bi bi-mortarboard-fill"></i> Lattes:</h4>
-            <div class="content-wrapper">
-                <p class="card-text">CNPq / Plataforma Lattes</p>
-                <div class="div-button">
-                    <a href="http://lattes.cnpq.br/0480857149911245" target="_blank" rel="noopener noreferrer">
-                        <button type="button" class="btn-action">
-                            <i class="bi bi-box-arrow-up-right"></i> {{ 'ACCESS' | translate }}
-                        </button>
-                    </a>
+        <!-- Github Card -->
+        <div class="card area-github" data-anime="up">
+            <div class="card-body">
+                <h4 class="card-title"><i class="bi bi-github"></i> GitHub:</h4>
+                <div class="content-wrapper">
+                    <p class="card-text">{{ 'CONTACT-CARD-TEXT-3' | translate }}</p>
+                    <div class="div-button">
+                        <a href="https://github.com/iago-rhuda" target="_blank" rel="noopener noreferrer">
+                            <button type="button" class="btn-action">
+                                <i class="bi bi-github"></i> {{ 'VIEW_GITHUB' | translate }}
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lattes Card -->
+        <div class="card area-lattes" data-anime="up">
+            <div class="card-body">
+                <h4 class="card-title"><i class="bi bi-mortarboard-fill"></i> Lattes CNPq:</h4>
+                <div class="content-wrapper">
+                    <p class="card-text">{{ 'LATTES_DESC' | translate }}</p>
+                    <div class="div-button">
+                        <a href="http://lattes.cnpq.br/0480857149911245" target="_blank" rel="noopener noreferrer">
+                            <button type="button" class="btn-action">
+                                <i class="bi bi-box-arrow-up-right"></i> {{ 'VIEW_LATTES' | translate }}
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>

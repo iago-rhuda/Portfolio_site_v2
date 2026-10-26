@@ -11,15 +11,9 @@ import { Router } from '@angular/router';
 export class SwitchLangComponent implements OnInit {
 
   options = [
-    { value: 'en', display: 'English', flag: '🇺🇸' },
-    { value: 'pt', display: 'Português', flag: '🇧🇷' },
+    { value: 'en', display: 'English', flag: '🇬🇧' },
     { value: 'fr', display: 'Français', flag: '🇫🇷' },
-    { value: 'es', display: 'Español', flag: '🇪🇸' },
-    { value: 'it', display: 'Italiano', flag: '🇮🇹' },
-    { value: 'de', display: 'Deutsch', flag: '🇩🇪' },
-    { value: 'ko', display: '한국어', flag: '🇰🇷' },
-    { value: 'ja', display: '日本語', flag: '🇯🇵' },
-    { value: 'zh', display: '中文', flag: '🇨🇳' }
+    { value: 'pt', display: 'Português', flag: '🇧🇷' }
   ];
 
   isDarkMode = false;

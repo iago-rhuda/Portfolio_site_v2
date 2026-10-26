@@ -1,4 +1,4 @@
-<section id="portfolio-section" class="portfolio-section"
+<div id="portfolio-section" class="portfolio-section"
   (mouseenter)="pauseAutoPlay()"
   (mouseleave)="resumeAutoPlay()">
 
@@ -13,7 +13,7 @@
   <div class="carousel-wrapper">
 
     <!-- Left Chevron -->
-    <button class="chevron chevron-left" (click)="scrollLeft()" aria-label="Scroll left">
+    <button class="chevron chevron-left" (click)="scrollLeft()" [attr.aria-label]="'SCROLL_LEFT' | translate">
       <svg width="18" height="18" fill="currentColor"><use href="#icon-chevron-left"></use></svg>
     </button>
 
@@ -23,6 +23,7 @@
       <div
         *ngFor="let project of projects"
         class="project-card"
+        [class.card-featured]="project.isFeatured"
         [class.card-future]="project.categoryClass === 'cat-future'"
         (pointerdown)="onPointerDown($event)"
         (pointermove)="onPointerMove($event)"
@@ -34,9 +35,15 @@
 
         <!-- Card Top: badge + actions -->
         <div class="card-top">
-          <span class="category-badge" [ngClass]="project.categoryClass">
-            {{ project.categoryKey | translate }}
-          </span>
+          <div class="card-badges">
+            <span class="category-badge" [ngClass]="project.categoryClass">
+              {{ project.categoryKey | translate }}
+            </span>
+            <span class="status-badge badge-in-progress" *ngIf="project.isInProgress">
+              <span class="pulse-dot"></span>
+              {{ 'IN_PROGRESS_BADGE' | translate }}
+            </span>
+          </div>
           <div class="card-actions">
             <a *ngIf="project.githubUrl"
                [href]="project.githubUrl"
@@ -81,13 +88,13 @@
     </div><!-- /project-track -->
 
     <!-- Right Chevron -->
-    <button class="chevron chevron-right" (click)="scrollRight()" aria-label="Scroll right">
+    <button class="chevron chevron-right" (click)="scrollRight()" [attr.aria-label]="'SCROLL_RIGHT' | translate">
       <svg width="18" height="18" fill="currentColor"><use href="#icon-chevron-right"></use></svg>
     </button>
 
   </div><!-- /carousel-wrapper -->
 
-</section>
+</div>
 
 <!-- ══════════════════════════════════════════════
      PROJECT DETAIL MODAL — Apple sheet style
@@ -105,7 +112,7 @@
        (click)="$event.stopPropagation()">
 
     <!-- Close button -->
-    <button class="modal-close" (click)="closeModal()" aria-label="Close">
+    <button class="modal-close" (click)="closeModal()" [attr.aria-label]="'CLOSE' | translate">
       <svg width="14" height="14" fill="currentColor"><use href="#icon-close"></use></svg>
     </button>
 
