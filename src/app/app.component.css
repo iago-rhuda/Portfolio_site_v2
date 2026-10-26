@@ -1,5 +1,5 @@
 /* ============================================================
-   SECTIONS — Full viewport, vertically centered
+   SECTIONS — Full viewport on desktop, fluid flow on mobile
    ============================================================ */
 #HOME,
 #ABOUT,
@@ -55,24 +55,57 @@
   background: var(--bg-primary);
 }
 
-/* Alternating bg creates subtle Apple-like rhythm */
+/* Fluid flow on tablet and mobile */
+@media (max-width: 991px) {
+  #ABOUT,
+  #EXPERIENCE,
+  #QUALIFICATIONS,
+  #SKILLS,
+  #PORTFOLIO,
+  #ARTICLES,
+  #CONTACT {
+    min-height: auto;
+    justify-content: flex-start;
+    padding: 75px 1rem 95px;
+  }
 
-/* ── ECO BADGE ── */
-.eco-badge-container {
-    position: fixed;
-    bottom: 24px;
-    left: 24px;
-    z-index: 9990;
-    padding: 0;
-    background: transparent;
-    pointer-events: auto;
+  #HOME {
+    min-height: 100vh;
+    padding: 75px 1rem 80px;
+    justify-content: center;
+  }
 }
 
-@media (max-width: 768px) {
-    .eco-badge-container {
-        bottom: 85px; /* Stay above the mobile navbar */
-        left: 16px;
-    }
+/* ── FOOTER & ECO BADGE ── */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--bg-primary);
+}
+
+.eco-badge-container {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 9990;
+  padding: 0;
+  background: transparent;
+  pointer-events: auto;
+}
+
+/* On screens < 1280px, dock eco-badge statically in footer to prevent covering card content */
+@media (max-width: 1279px) {
+  footer {
+    padding: 1.5rem 1rem 6rem;
+  }
+
+  .eco-badge-container {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .eco-badge {
@@ -157,10 +190,10 @@
 
 @media (max-width: 768px) {
   .back-to-top {
-    bottom: 85px;
+    bottom: 16px;
     right: 16px;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     font-size: 1rem;
   }
 }

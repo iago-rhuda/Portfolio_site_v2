@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, HostListener, Inject, PLATFORM_ID, ElementRef } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
@@ -25,7 +25,17 @@ export class NavbarComponent {
     'CONTACT'
   ];
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private elementRef: ElementRef
+  ) {}
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    if (this.isMenuOpen && !this.elementRef.nativeElement.contains(event.target)) {
+      this.isMenuOpen = false;
+    }
+  }
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {

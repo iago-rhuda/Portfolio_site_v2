@@ -114,6 +114,11 @@
   pointer-events: auto;
 }
 
+@media (max-width: 768px) {
+  .header-container { padding: 0.55rem 1.25rem; }
+  .dynamic-name { font-size: 0.88rem; max-width: 45%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}
+
 @media (max-width: 600px) {
   .header-container { padding: 0.55rem 1rem; justify-content: flex-end; }
   .dynamic-name { display: none; }
